@@ -601,15 +601,27 @@ button { font: inherit; color: inherit; }
 
 /* ---------- Unit economics ---------- */
 .ue-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--space-5); }
-.ue-chart-wrap { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-l); padding: var(--space-5); min-width: 0; }
-.sankey { margin-top: var(--space-4); }
-.sankey svg { display: block; width: 100%; height: auto; }
+.ue-chart-wrap { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius-l); padding: var(--space-5); min-width: 0; position: relative; }
+.ue-chart-head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-3); }
+.sankey-hint-pill { display: none; }
+.ue-quick-bar { display: none; }
+.sankey-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--emerald-soft) transparent;
+  padding-bottom: 0.25rem;
+}
+.sankey-scroll::-webkit-scrollbar { height: 6px; }
+.sankey-scroll::-webkit-scrollbar-thumb { background: var(--line); border-radius: 3px; }
+.sankey { margin-top: var(--space-2); min-width: 720px; }
+.sankey svg { display: block; width: 100%; min-width: 720px; height: auto; }
 .sankey .ribbon { transition: opacity .25s var(--ease); cursor: pointer; }
 .sankey .node-rect { cursor: pointer; }
 .sankey.is-focused .ribbon:not(.is-active) { opacity: 0.18; }
 .sankey text { font-family: var(--font-mono); font-size: 13px; fill: var(--ink); font-variant-numeric: tabular-nums; }
 .sankey text.sk-sub { font-family: var(--font-body); font-size: 12px; fill: var(--muted); }
-.sankey text.sk-big { font-size: 15px; font-weight: 600; }
+.sankey text.sk-big { font-size: 15px; font-weight: 700; }
 
 .ue-ledger { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-3); }
 .ue-ledger li {
@@ -925,6 +937,63 @@ button { font: inherit; color: inherit; }
   .flow-step::after { display: none; }
   .flow-step .node { flex: none; }
   .ue-ledger { grid-template-columns: minmax(0, 1fr); }
+  .ue-chart-wrap { padding: var(--space-4); }
+  .sankey-hint-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--forest);
+    background: var(--lime);
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-full);
+  }
+  .sankey-scroll {
+    margin-inline: calc(var(--space-4) * -1);
+    padding-inline: var(--space-4);
+  }
+  .ue-quick-bar {
+    display: block;
+    margin-bottom: var(--space-4);
+    background: rgba(14, 28, 21, 0.03);
+    padding: var(--space-3);
+    border-radius: var(--radius-m);
+    border: 1px solid var(--line);
+  }
+  .ue-bar-track {
+    display: flex;
+    height: 14px;
+    border-radius: 7px;
+    overflow: hidden;
+    gap: 1.5px;
+    background: var(--line);
+  }
+  .ue-bar-seg {
+    height: 100%;
+    transition: width 0.3s var(--ease);
+  }
+  .ue-bar-legend {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.35rem 0.6rem;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--ink-2);
+  }
+  .ue-bar-legend span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+  .ue-bar-legend i {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+  }
   .sim-inputs { grid-template-columns: minmax(0, 1fr); }
   .dash-main { padding: var(--space-4); }
   .table-scroll { margin-inline: calc(var(--space-4) * -1); padding-inline: var(--space-4); }

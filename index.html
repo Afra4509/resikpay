@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=2.4">
+  <link rel="stylesheet" href="css/style.css?v=2.5">
 </head>
 <body>
 
@@ -359,12 +359,39 @@
 
       <div class="ue-layout">
         <div class="ue-chart-wrap">
+          <div class="ue-chart-head">
           <div class="segmented" role="radiogroup" aria-label="Satuan perhitungan" id="ueUnits">
             <button type="button" role="radio" aria-checked="true" data-mult="1">per kg</button>
             <button type="button" role="radio" aria-checked="false" data-mult="100">per 100 kg</button>
             <button type="button" role="radio" aria-checked="false" data-mult="1000">per ton</button>
           </div>
-          <div class="sankey" id="sankey" role="img" aria-label="Diagram alur pembagian harga jual material per kilogram"></div>
+            <span class="sankey-hint-pill" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+              Geser alur detail →
+            </span>
+          </div>
+
+          <!-- Ringkasan visual langsung di mobile -->
+          <div class="ue-quick-bar" aria-label="Ringkasan pembagian per kilogram">
+            <div class="ue-bar-track">
+              <span class="ue-bar-seg" style="width:35%;background:#1C8457" title="Reward warga: 35%"></span>
+              <span class="ue-bar-seg" style="width:8%;background:#C8E86E" title="Kas RW: 8%"></span>
+              <span class="ue-bar-seg" style="width:6.9%;background:#C79A33" title="Angkutan: 6,9%"></span>
+              <span class="ue-bar-seg" style="width:12%;background:#3B8EA5" title="Platform & Pajak: 12%"></span>
+              <span class="ue-bar-seg" style="width:38.1%;background:#123D2B" title="Kontribusi: 38,1%"></span>
+            </div>
+            <div class="ue-bar-legend">
+              <span><i style="background:#1C8457"></i> 35% Warga</span>
+              <span><i style="background:#C8E86E"></i> 8% Kas RW</span>
+              <span><i style="background:#C79A33"></i> 7% Angkut</span>
+              <span><i style="background:#3B8EA5"></i> 12% Platf</span>
+              <span><i style="background:#123D2B"></i> 38% Kontrib</span>
+            </div>
+          </div>
+
+          <div class="sankey-scroll" tabindex="0" role="region" aria-label="Diagram alur pembagian harga jual material per kilogram, dapat digeser horizontal">
+            <div class="sankey" id="sankey" role="img" aria-label="Diagram alur pembagian harga jual material per kilogram"></div>
+          </div>
         </div>
 
         <ol class="ue-ledger" id="ueLedger">
@@ -703,7 +730,7 @@
 
 <noscript><p class="noscript">Aktifkan JavaScript untuk melihat angka, grafik, dan dashboard ResikPay.</p></noscript>
 
-<script src="js/data.js?v=2.4"></script>
-<script src="js/app.js?v=2.4"></script>
+<script src="js/data.js?v=2.5"></script>
+<script src="js/app.js?v=2.5"></script>
 </body>
 </html>

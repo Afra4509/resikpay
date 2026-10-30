@@ -644,21 +644,20 @@
 
   function renderSankey() {
     const host = $("#sankey");
-    const width = host.clientWidth || 600;
-    const vertical = width < 560;
+    if (!host) return;
     const items = ueModel();
     const by = Object.fromEntries(items.map((i) => [i.key, i]));
     const mult = UE_STATE.mult;
 
-    const L = vertical ? 610 : 920;      // panjang arah alur
-    const CW = vertical ? 340 : 380;     // lebar melintang
-    const pad = vertical ? 10 : 28;
-    const gapPx = 16;
+    const L = 880;       // panjang alur horizontal
+    const CW = 360;      // tinggi canvas
+    const pad = 24;
+    const gapPx = 14;
     const node = 16;
-    const cols = vertical ? [56, 300, 540] : [150, 450, 730];
+    const cols = [140, 420, 670];
     const k = (CW - 2 * pad - 2 * gapPx) / by.price.v;
 
-    // Posisi melintang
+    // Posisi melintang (vertikal)
     const pos = {};
     const total0 = by.price.v * k;
     pos.price = (CW - total0) / 2;
@@ -670,11 +669,11 @@
     let c2 = Math.min(CW - pad - col2Total, Math.max(pad, pos.rest + (by.rest.v * k) / 2 - col2Total / 2));
     col2.forEach((i) => { pos[i.key] = c2; c2 += i.v * k + gapPx; });
 
-    const P = (a, b) => (vertical ? `${b},${a}` : `${a},${b}`);
-    const rect = (a, b, la, lb) => (vertical ? { x: b, y: a, width: lb, height: la } : { x: a, y: b, width: la, height: lb });
+    const P = (a, b) => `${a},${b}`;
+    const rect = (a, b, la, lb) => ({ x: a, y: b, width: la, height: lb });
 
     host.innerHTML = "";
-    const root = svg("svg", { viewBox: vertical ? `0 0 ${CW} ${L}` : `0 0 ${L} ${CW}` }, host);
+    const root = svg("svg", { viewBox: `0 0 ${L} ${CW}`, preserveAspectRatio: "xMinYMid meet" }, host);
     const defs = svg("defs", {}, root);
     const pat = svg("pattern", { id: "hatch", width: 6, height: 6, patternUnits: "userSpaceOnUse", patternTransform: "rotate(45)" }, defs);
     svg("rect", { width: 6, height: 6, fill: "#F6E1DA" }, pat);
@@ -717,27 +716,21 @@
     items.forEach((i) => {
       const mid = pos[i.key] + (i.v * k) / 2;
       const value = rp(i.v * mult);
-      if (!vertical) {
-        if (i.key === "price") {
-          txt(colAt(i) - 12, mid - 4, value, "sk-big", "end");
-          txt(colAt(i) - 12, mid + 14, unit + " · harga jual", "sk-sub", "end");
-        } else if (i.key === "rest") {
-          txt(colAt(i) + node / 2, pos.rest + i.v * k + 18, `${value} · ${pct(i.v / by.price.v)} sisa`, "", "middle");
-        } else {
-          const short = { reward: "Reward rumah tangga", rw: "Dana RW", logistics: "Biaya angkut", platformTax: "Platform & pajak", contrib: "Kontribusi operasional" }[i.key] || i.name;
-          txt(colAt(i) + node + 10, mid - 2, `${value} · ${pct(i.v / by.price.v)}`, "");
-          txt(colAt(i) + node + 10, mid + 14, short, "sk-sub");
-        }
+      if (i.key === "price") {
+        txt(colAt(i) - 12, mid - 4, value, "sk-big", "end");
+        txt(colAt(i) - 12, mid + 14, unit + " · harga jual", "sk-sub", "end");
+      } else if (i.key === "rest") {
+        txt(colAt(i) + node / 2, pos.rest + i.v * k + 18, `${value} · ${pct(i.v / by.price.v)} sisa operasional`, "", "middle");
       } else {
-        if (i.key === "price") {
-          txt(CW / 2, colAt(i) - 22, value + " " + unit, "sk-big", "middle");
-          txt(CW / 2, colAt(i) - 6, "harga jual", "sk-sub", "middle");
-        } else if (i.key !== "rest") {
-          // Label pendek agar node yang berdekatan tidak bertabrakan; nilai lengkap ada di daftar
-          txt(mid, colAt(i) + node + 18, pct(i.v / by.price.v), "", "middle");
-          const sub = { reward: "reward", rw: "RW", logistics: "angkut", platformTax: "platform", contrib: "kontribusi" }[i.key] || i.key;
-          txt(mid, colAt(i) + node + 34, sub, "sk-sub", "middle");
-        }
+        const short = {
+          reward: "Reward rumah tangga",
+          rw: "Dana lingkungan RW",
+          logistics: "Biaya angkut & logistik",
+          platformTax: "Platform & pajak omzet",
+          contrib: "Kontribusi operasional"
+        }[i.key] || i.name;
+        txt(colAt(i) + node + 10, mid - 2, `${value} · ${pct(i.v / by.price.v)}`, "");
+        txt(colAt(i) + node + 10, mid + 14, short, "sk-sub");
       }
     });
     applyUeFocus();
