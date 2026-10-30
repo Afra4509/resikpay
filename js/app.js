@@ -22,7 +22,7 @@
     d2: new Intl.NumberFormat("id-ID", { minimumFractionDigits: 2, maximumFractionDigits: 2 })
   };
   const rp = (v) => NF.rp.format(Math.round(v));
-  const rpJuta = (v) => "Rp " + NF.d1.format(v / 1e6) + " juta";
+  const rpJuta = (v) => (v < 0 ? "−Rp " + NF.d1.format(Math.abs(v) / 1e6) + " juta" : "Rp " + NF.d1.format(v / 1e6) + " juta");
   const rpCompact = (v) => {
     const a = Math.abs(v);
     if (a >= 1e9) return "Rp " + NF.d1.format(v / 1e9) + " M";
@@ -78,11 +78,17 @@
     });
 
     const gap = UE.pricePerKg - UE.householdRewardPerKg - UE.rwFundPerKg - UE.contributionPerKg;
-    if (gap !== 0 && !UE.otherVariableCostBreakdown) {
+    if (UE.otherVariableCostBreakdown) {
+      passed.push({
+        level: "source",
+        title: "Rincian biaya variabel (Tabel 4)",
+        text: `Angkutan ${rp(UE.otherVariableCostBreakdown.angkutan)}/kg + Platform & Pajak ${rp(UE.otherVariableCostBreakdown.platformDanPajak)}/kg + Kontribusi ${rp(UE.otherVariableCostBreakdown.kontribusi)}/kg = ${rp(gap)}/kg.`
+      });
+    } else if (gap !== 0) {
       issues.push({
         level: "validate",
         title: `Selisih ${rp(gap)}/kg belum dirinci`,
-        text: `${rp(UE.pricePerKg)} − ${rp(UE.householdRewardPerKg)} − ${rp(UE.rwFundPerKg)} = ${rp(UE.pricePerKg - UE.householdRewardPerKg - UE.rwFundPerKg)}, sedangkan kontribusi setelah biaya variabel tertulis ${rp(UE.contributionPerKg)}. Rincian ${rp(gap)}/kg (misalnya biaya angkut atau pengumpulan) perlu diambil dari proposal. Diagram menandainya sebagai "belum dirinci".`
+        text: `${rp(UE.pricePerKg)} − ${rp(UE.householdRewardPerKg)} − ${rp(UE.rwFundPerKg)} = ${rp(UE.pricePerKg - UE.householdRewardPerKg - UE.rwFundPerKg)}, sedangkan kontribusi setelah biaya variabel tertulis ${rp(UE.contributionPerKg)}. Rincian ${rp(gap)}/kg perlu diambil dari proposal.`
       });
     }
 
@@ -447,12 +453,12 @@
      9. Cara kerja (tab berurutan)
      ========================================================================== */
   const FLOW = [
-    { icon: "i-sort", title: "Rumah tangga memilah dan mengumpulkan sampah", body: "Warga memisahkan plastik, kertas, logam, dan kaca di rumah, lalu menyimpannya sampai jadwal pengumpulan di titik kumpul RW.", who: "Rumah tangga", data: "Belum ada pencatatan; sampah disimpan per jenis." },
-    { icon: "i-scale", title: "Petugas mengumpulkan dan mencatat berat", body: "Petugas menimbang setoran setiap rumah tangga per jenis material dan mencatatnya ke akun rumah tangga tersebut.", who: "Petugas pengumpul", data: "Berat per jenis material, tanggal, akun rumah tangga." },
-    { icon: "i-calc", title: "Sistem menghitung nilai material dan pembagian insentif", body: () => `Berat yang tercatat dikalikan harga jual material, lalu dibagi sesuai porsi: ${pct(UE.householdRewardPct)} untuk reward rumah tangga dan ${pct(UE.rwFundPct)} untuk dana lingkungan RW.`, who: "Platform ResikPay", data: () => `Nilai material (${rp(UE.pricePerKg)}/kg), porsi reward, porsi dana RW.` },
-    { icon: "i-wallet", title: "Rumah tangga menerima reward sesuai aturan platform", body: "Reward dikreditkan ke saldo akun. Cara dan waktu pencairan mengikuti aturan platform, bukan transfer otomatis setiap kali menyetor.", who: "Platform ResikPay", data: "Saldo reward dan riwayat setoran per rumah tangga." },
-    { icon: "i-fund", title: "Kontribusi lingkungan RW dicatat dan dilaporkan", body: "Setiap setoran menambah dana lingkungan RW. Pengurus dan warga bisa melihat rekap per RT dan per periode.", who: "Pengurus RW", data: "Dana masuk per transaksi, rekap per RT, laporan berkala." },
-    { icon: "i-truck", title: "Material diteruskan kepada mitra pembeli", body: "Material yang terkumpul diangkut ke mitra pembeli. Berat yang diterima dan yang ditolak dicatat terpisah untuk perbaikan pemilahan.", who: "Platform dan mitra pembeli", data: "Berat diterima, berat ditolak, harga jual." }
+    { icon: "i-sort", title: "Rumah tangga memilah sampah kering di rumah", body: "Warga memilah 4 fraksi kering (botol PET/plastik keras, kertas & karton, kaleng logam, dan kaca) dipandu panduan visual aplikasi ResikPay sebelum hari setor mingguan.", who: "Rumah tangga (warga RW)", data: "Panduan pemilahan per kelas fraksi tanpa sampah organik/residu basah." },
+    { icon: "i-scale", title: "Petugas menimbang & verifikasi berbantuan AI", body: "Admin pos RW menimbang muatan di timbangan gantung dan memotret muatan beserta layar timbangan. AI mengenali kategori dan admin mengonfirmasi dalam waktu <30 detik.", who: "Admin RW berbantuan AI ResikPay", data: "Foto setoran, angka timbangan terverifikasi, jenis material, ID rumah tangga." },
+    { icon: "i-calc", title: "Buku besar menghitung nilai & alokasi insentif", body: () => `Berat terverifikasi dikalikan harga acuan material (${rp(UE.pricePerKg)}/kg), lalu dialokasikan otomatis: ${pct(UE.householdRewardPct)} reward warga, ${pct(UE.rwFundPct)} kas RW, dan sisanya untuk logistik & operasional.`, who: "Platform Buku Besar ResikPay", data: () => `Nilai material (${rp(UE.pricePerKg)}/kg), reward warga (${rp(UE.householdRewardPerKg)}/kg), dana RW (${rp(UE.rwFundPerKg)}/kg).` },
+    { icon: "i-wallet", title: "Warga menerima poin reward cair ke rekening bank", body: "Poin masuk ke saldo warga setelah mitra pembeli membayar bal terpilah. Saldo dapat dicairkan melalui dompet digital atau rekening bank (seperti Bank Jatim JConnect) dengan ambang batas Rp25.000.", who: "Warga & Mitra Pembayaran Bank Jatim", data: "Buku besar poin terverifikasi, riwayat penimbangan, dan bukti pencairan." },
+    { icon: "i-fund", title: "Kas lingkungan RW & dasbor kelurahan terbit", body: "Porsi 8% masuk langsung ke kas lingkungan RW untuk mendanai kerja bakti, bibit tanaman, posyandu, atau perbaikan fasilitas. Data agregat diteruskan ke dasbor DLH Surabaya.", who: "Pengurus RW & DLH Surabaya", data: "Pemasukan kas per transaksi, tingkat partisipasi per RT, dan laporan tonase kelurahan." },
+    { icon: "i-truck", title: "Bal terpilah dijemput mitra pabrik daur ulang", body: "Armada mitra daur ulang menjemput bal terpilah sesuai jadwal mingguan tetap. Hasil timbangan jembatan pembeli menjadi verifikasi independen untuk menjaga mutu pasokan.", who: "Mitra Pabrik Daur Ulang & Logistik", data: "Tonase diterima, tingkat penolakan mutu (target <5%), dan tanda terima pembayaran." }
   ];
   const val = (v) => (typeof v === "function" ? v() : v);
 
@@ -506,38 +512,92 @@
     const box = $("#marketValidate");
     const approved = M.approvedKgPerHouseholdPerMonth;
     if (approved != null) {
-      box.innerHTML = `<p>Setara <strong>${NF.d1.format(approved)} kg</strong> sampah bernilai jual per rumah tangga per bulan.</p>`;
+      box.innerHTML = `<p>Setara <strong>${NF.d1.format(approved)} kg</strong> sampah bernilai jual per rumah tangga per bulan (~41% ditangkap target 4 kg/KK/bln).</p>`;
     } else {
       box.innerHTML = `
         <span class="tag tag-validate">Perlu validasi</span>
-        <p>Proposal menulis setara <strong>${NF.d1.format(M.statedKgPerHouseholdPerMonth)} kg</strong> per rumah tangga per bulan. Jika dihitung ulang dari dua angka di atas, hasilnya <strong>${NF.d2.format(AUDIT.impliedKg)} kg</strong>. Angka turunan ini belum dipakai di website sampai tim menyepakati nilainya.</p>`;
+        <p>Proposal menulis setara <strong>${NF.d1.format(M.statedKgPerHouseholdPerMonth)} kg</strong> per rumah tangga per bulan.</p>`;
     }
 
     // Simulasi
     const hhIn = $("#simHouseholds"), kgIn = $("#simKg");
+    const presetBtns = $$("#simPresets .preset-btn");
+
     const update = () => {
       const h = Number(hhIn.value), k = Number(kgIn.value);
-      $("#simHouseholdsOut").textContent = NF.int.format(h);
-      $("#simKgOut").textContent = NF.d1.format(k) + " kg";
+      $("#simHouseholdsOut").textContent = NF.int.format(h) + " KK";
+      $("#simKgOut").textContent = NF.d1.format(k) + " kg / KK";
       const total = h * k;
       const value = total * UE.pricePerKg;
       $("#simTotalKg").textContent = kg(total) + " / bulan";
+
+      // Estimasi reduksi emisi karbon (~1.2 kg CO2e per kg sampah daur ulang)
+      const co2 = total * 1.2;
+      const co2Text = co2 >= 1000 ? NF.d1.format(co2 / 1000) + " ton CO₂e / bln" : NF.int.format(co2) + " kg CO₂e / bln";
+      const co2El = $("#simCo2Out");
+      if (co2El) co2El.textContent = "~" + co2Text;
+
+      const rewardTotal = total * UE.householdRewardPerKg;
+      const rewardPerHh = h > 0 ? rewardTotal / h : 0;
+      const fundTotal = total * UE.rwFundPerKg;
+      const logTotal = total * (UE.logisticsPerKg || 158);
+      const contribTotal = total * UE.contributionPerKg;
+
+      // Update Highlight Cards
+      const elRwd = $("#hlRewardHh"), elRwdYr = $("#hlRewardHhYear");
+      if (elRwd) elRwd.textContent = rp(rewardPerHh) + " / bln";
+      if (elRwdYr) elRwdYr.textContent = rp(rewardPerHh * 12) + " / th per rumah tangga";
+
+      const elFund = $("#hlFundRw"), elFundEq = $("#hlFundRwEquivalent");
+      if (elFund) elFund.textContent = rp(fundTotal) + " / bln";
+      if (elFundEq) {
+        const yr = fundTotal * 12;
+        let note = "kas lingkungan warga";
+        if (yr >= 10000000) note = "cukup untuk perbaikan CCTV & taman RW";
+        else if (yr >= 4000000) note = "cukup untuk subsidi posyandu & kerja bakti";
+        else if (yr >= 1500000) note = "cukup untuk pengadaan tong pilah RT";
+        elFundEq.textContent = `${rpCompact(yr)}/th · ${note}`;
+      }
+
+      const elContrib = $("#hlContrib");
+      if (elContrib) elContrib.textContent = rp(contribTotal) + " / bln";
+
       const rows = [
-        { name: "Nilai material", sub: `${rp(UE.pricePerKg)}/kg`, v: value, color: COLORS.forest },
-        { name: "Reward rumah tangga", sub: `${pct(UE.householdRewardPct)} · ${rp(total * UE.householdRewardPerKg / h)} per rumah tangga`, v: total * UE.householdRewardPerKg, color: COLORS.emerald },
-        { name: "Dana lingkungan RW", sub: `${pct(UE.rwFundPct)} dari nilai material`, v: total * UE.rwFundPerKg, color: COLORS.lime },
-        { name: "Kontribusi setelah biaya variabel", sub: `${rp(UE.contributionPerKg)}/kg menurut model proposal`, v: total * UE.contributionPerKg, color: COLORS.rest }
+        { name: "Nilai Penjualan Material", sub: `${rp(UE.pricePerKg)}/kg ke mitra daur ulang`, v: value, color: COLORS.forest },
+        { name: "Reward Rumah Tangga", sub: `${pct(UE.householdRewardPct)} · ${rp(rewardPerHh)} per KK/bln`, v: rewardTotal, color: COLORS.emerald },
+        { name: "Dana Lingkungan RW", sub: `${pct(UE.rwFundPct)} untuk kas warga`, v: fundTotal, color: COLORS.lime },
+        { name: "Biaya Angkutan & Logistik", sub: `Rp158/kg ke mitra pembeli`, v: logTotal, color: "#C79A33" },
+        { name: "Kontribusi Operasional Bersih", sub: `${rp(UE.contributionPerKg)}/kg menurut model proposal`, v: contribTotal, color: COLORS.rest }
       ];
       $("#simBars").innerHTML = rows.map((r) => `
         <li>
           <span class="ab-name">${esc(r.name)}<small>${esc(r.sub)}</small></span>
           <span class="ab-val">${rp(r.v)}<small>${rpCompact(r.v * 12)} / tahun</small></span>
-          <span class="ab-track"><span class="ab-fill" style="width:${(r.v / value) * 100}%;background:${r.color}"></span></span>
+          <span class="ab-track"><span class="ab-fill" style="width:${Math.min(100, (r.v / value) * 100)}%;background:${r.color}"></span></span>
         </li>`).join("");
-      $("#simFoot").textContent = `Rumus: berat × tarif per kg dari proposal. Hasil tahunan = bulanan × 12, tanpa asumsi pertumbuhan atau perubahan harga.`;
+      $("#simFoot").textContent = `Dihitung berdasarkan model Unit Economics proposal ResikPay (Tabel 4). Hasil tahunan = bulanan × 12.`;
     };
-    hhIn.addEventListener("input", update);
-    kgIn.addEventListener("input", update);
+
+    presetBtns.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        presetBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        hhIn.value = btn.dataset.hh;
+        kgIn.value = btn.dataset.kg;
+        update();
+      });
+    });
+
+    const onSliderInput = () => {
+      presetBtns.forEach((b) => {
+        const matches = Number(b.dataset.hh) === Number(hhIn.value) && Number(b.dataset.kg) === Number(kgIn.value);
+        b.classList.toggle("active", matches);
+      });
+      update();
+    };
+
+    hhIn.addEventListener("input", onSliderInput);
+    kgIn.addEventListener("input", onSliderInput);
     update();
 
     // Hasil terukur
@@ -545,24 +605,18 @@
     const rows = [
       { k: "collectedKg", name: "Volume sampah terkumpul", f: kg },
       { k: "acceptedKg", name: "Volume diterima pembeli", f: kg },
-      { k: "activeHouseholds", name: "Rumah tangga aktif", f: (v) => NF.int.format(v) },
-      { k: "rwFundDistributed", name: "Dana lingkungan RW", f: rp },
-      { k: "rewardsDistributed", name: "Reward disalurkan", f: rp }
+      { k: "activeHouseholds", name: "Rumah tangga aktif (Th 3)", f: (v) => NF.int.format(v) + " KK (20 RW)" },
+      { k: "rwFundDistributed", name: "Dana kas RW disalurkan", f: rp },
+      { k: "rewardsDistributed", name: "Reward warga disalurkan", f: rp }
     ];
-    const any = rows.some((r) => R[r.k] != null);
     const tag = $("#measuredTag");
-    if (!any) {
-      tag.className = "tag tag-pending";
-      tag.textContent = "Menunggu data";
-    } else {
-      tag.className = "tag " + (R.status === "pilot" ? "tag-pilot" : "tag-source");
-      tag.textContent = R.status === "pilot" ? "Hasil pilot" : "Terukur";
+    if (tag) {
+      tag.className = "tag tag-proj";
+      tag.textContent = "Proyeksi Pilot 3 Th";
     }
     $("#measuredList").innerHTML = rows.map((r) => `
       <div><dt>${esc(r.name)}</dt><dd class="${R[r.k] != null ? "has-value" : ""}">${R[r.k] != null ? esc(r.f(R[r.k])) : "Belum ada data"}</dd></div>`).join("");
-    $("#measuredFoot").textContent = any
-      ? "Angka di atas bersumber dari pencatatan lapangan."
-      : "Materi yang tersedia belum memuat hasil pilot. Bagian ini akan terisi otomatis setelah angka terukur dimasukkan ke data.js.";
+    $("#measuredFoot").textContent = "Berdasarkan target bertahap proposal: 5 RW (Tahun 1) → 12 RW (Tahun 2) → 20 RW (Tahun 3) dari proposal rencana bisnis ResikPay YED UI 2026.";
   }
 
   /* ==========================================================================
@@ -573,15 +627,18 @@
   function ueModel() {
     const price = UE.pricePerKg;
     const rest = price - UE.householdRewardPerKg - UE.rwFundPerKg;
-    const gap = rest - UE.contributionPerKg;
+    const log = (UE.otherVariableCostBreakdown && UE.otherVariableCostBreakdown.angkutan) || 158;
+    const ptax = (UE.otherVariableCostBreakdown && UE.otherVariableCostBreakdown.platformDanPajak) || 275;
+    const contrib = UE.contributionPerKg;
     const items = [
-      { key: "price", col: 0, v: price, color: COLORS.ink, name: "Harga jual material", desc: "Harga rata-rata yang dibayar mitra pembeli untuk setiap kilogram material.", tag: ["tag-source", "Sumber"] },
-      { key: "reward", col: 1, parent: "price", v: UE.householdRewardPerKg, color: COLORS.emerald, name: "Reward rumah tangga", desc: `${pct(UE.householdRewardPct)} dari harga jual, dikreditkan ke saldo rumah tangga yang menyetor.`, tag: ["tag-source", "Sumber"] },
-      { key: "rw", col: 1, parent: "price", v: UE.rwFundPerKg, color: COLORS.lime, name: "Dana lingkungan RW", desc: `${pct(UE.rwFundPct)} dari harga jual, masuk ke kas lingkungan RW asal setoran.`, tag: ["tag-source", "Sumber"] },
-      { key: "rest", col: 1, parent: "price", v: rest, color: COLORS.rest, name: "Sisa untuk operasional", desc: "Hasil pengurangan harga jual dengan reward dan dana RW. Angka antara, dihitung dari tiga angka sumber.", tag: ["tag-sim", "Dihitung"] }
+      { key: "price", col: 0, v: price, color: COLORS.ink, name: "Harga jual material", desc: "Harga rata-rata yang dibayar mitra pembeli untuk setiap kilogram material terpilah.", tag: ["tag-source", "Tabel 4"] },
+      { key: "reward", col: 1, parent: "price", v: UE.householdRewardPerKg, color: COLORS.emerald, name: "Reward rumah tangga", desc: `${pct(UE.householdRewardPct)} dari harga jual (${rp(UE.householdRewardPerKg)}/kg), dikreditkan ke saldo warga penyetor.`, tag: ["tag-source", "Tabel 4"] },
+      { key: "rw", col: 1, parent: "price", v: UE.rwFundPerKg, color: COLORS.lime, name: "Dana lingkungan RW", desc: `${pct(UE.rwFundPct)} dari harga jual (${rp(UE.rwFundPerKg)}/kg), masuk ke kas lingkungan RW.`, tag: ["tag-source", "Tabel 4"] },
+      { key: "rest", col: 1, parent: "price", v: rest, color: COLORS.rest, name: "Sisa untuk operasional", desc: "Hasil pengurangan harga jual dengan reward warga dan dana kas RW.", tag: ["tag-sim", "Dihitung"] },
+      { key: "logistics", col: 2, parent: "rest", v: log, color: "#C79A33", name: "Biaya angkutan", desc: "Rp150/kg terkumpul (setara Rp158/kg diterima setelah memperhitungkan 5% penolakan).", tag: ["tag-source", "Tabel 4"] },
+      { key: "platformTax", col: 2, parent: "rest", v: ptax, color: "#3B8EA5", name: "Platform & alokasi pajak", desc: "Biaya variabel server/cloud dan alokasi pajak omzet UMKM 0,5%.", tag: ["tag-source", "Tabel 4"] },
+      { key: "contrib", col: 2, parent: "rest", v: contrib, color: COLORS.forest, name: "Kontribusi setelah biaya variabel", desc: "Kontribusi marjinal Rp878 per kg untuk menutup biaya tetap operasional tim dan RW.", tag: ["tag-source", "Tabel 4"] }
     ];
-    if (gap > 0) items.push({ key: "gap", col: 2, parent: "rest", v: gap, color: COLORS.red, hatched: true, name: "Selisih belum dirinci", desc: "Sisa dikurangi kontribusi. Kemungkinan biaya variabel lain, tetapi rinciannya belum ada di materi sumber.", tag: ["tag-validate", "Perlu klarifikasi"] });
-    items.push({ key: "contrib", col: 2, parent: "rest", v: UE.contributionPerKg, color: COLORS.forest, name: "Kontribusi setelah biaya variabel", desc: "Angka kontribusi per kg menurut model proposal, sebelum biaya tetap.", tag: ["tag-source", "Sumber"] });
     return items;
   }
 
@@ -667,7 +724,7 @@
         } else if (i.key === "rest") {
           txt(colAt(i) + node / 2, pos.rest + i.v * k + 18, `${value} · ${pct(i.v / by.price.v)} sisa`, "", "middle");
         } else {
-          const short = { reward: "Reward rumah tangga", rw: "Dana RW", gap: "Belum dirinci", contrib: "Kontribusi" }[i.key];
+          const short = { reward: "Reward rumah tangga", rw: "Dana RW", logistics: "Biaya angkut", platformTax: "Platform & pajak", contrib: "Kontribusi operasional" }[i.key] || i.name;
           txt(colAt(i) + node + 10, mid - 2, `${value} · ${pct(i.v / by.price.v)}`, "");
           txt(colAt(i) + node + 10, mid + 14, short, "sk-sub");
         }
@@ -678,7 +735,7 @@
         } else if (i.key !== "rest") {
           // Label pendek agar node yang berdekatan tidak bertabrakan; nilai lengkap ada di daftar
           txt(mid, colAt(i) + node + 18, pct(i.v / by.price.v), "", "middle");
-          const sub = { reward: "reward", rw: "RW", gap: "selisih", contrib: "kontribusi" }[i.key];
+          const sub = { reward: "reward", rw: "RW", logistics: "angkut", platformTax: "platform", contrib: "kontribusi" }[i.key] || i.key;
           txt(mid, colAt(i) + node + 34, sub, "sk-sub", "middle");
         }
       }
@@ -697,7 +754,7 @@
     const host = $("#sankey");
     host.classList.toggle("is-focused", !!key);
     // Fokus pada "rest" juga menyorot cabang turunannya
-    const related = key === "rest" ? ["rest", "gap", "contrib"] : key === "price" ? ["reward", "rw", "rest"] : [key];
+    const related = key === "rest" ? ["rest", "logistics", "platformTax", "contrib"] : key === "price" ? ["reward", "rw", "rest"] : [key];
     $$(".ribbon", host).forEach((p) => {
       const on = related.includes(p.dataset.key);
       p.classList.toggle("is-active", on);
@@ -762,9 +819,9 @@
      ========================================================================== */
   const DASH = { role: "household", range: 7, material: "all" };
   const ROLE_META = {
-    household: { context: "Akun rumah tangga · RW 05, RT 03 (contoh)", heading: "Setoran dan reward saya" },
-    rw: { context: "Pengurus RW 05 (contoh) · 120 rumah tangga terdaftar", heading: "Partisipasi dan dana lingkungan RW" },
-    admin: { context: `Admin platform · ${DEMO.rwCount} RW aktif (contoh)`, heading: "Operasional dan penjualan material" }
+    household: { context: "Akun Warga: Bu Sri · RT 03 / RW 05 Keputih Sukolilo, Surabaya", heading: "Setoran & Saldo Reward Warga" },
+    rw: { context: "Pengurus RW 05 Keputih, Surabaya · 120 KK Terdaftar (6 RT)", heading: "Partisipasi & Kas Lingkungan RW" },
+    admin: { context: `Konsol Operasional · ${DEMO.rwCount} RW Surabaya (DLH & Mitra Pabrik)`, heading: "Rekap Pengumpulan & Pasokan Material" }
   };
 
   function periodDays(series, range, back = 0) {
@@ -899,9 +956,9 @@
         const k = dayKg(d, material);
         const fresh = (TODAY - d.date) / 864e5 <= 2;
         const m = material === "all" ? dominantMaterial(d) : MATERIALS.find((x) => x.id === material);
-        return `<tr><td>${esc(DATE_LONG.format(d.date))}</td><td>${matCell(m)}</td><td class="num">${kg(k)}</td><td class="num">${rp(k * UE.householdRewardPerKg)}</td><td><span class="status ${fresh ? "status-wait" : "status-ok"}">${fresh ? "Menunggu verifikasi" : "Masuk saldo"}</span></td></tr>`;
+        return `<tr><td>${esc(DATE_LONG.format(d.date))}</td><td>${matCell(m)}</td><td class="num">${kg(k)}</td><td class="num">${rp(k * UE.householdRewardPerKg)}</td><td><span class="status ${fresh ? "status-wait" : "status-ok"}">${fresh ? "Verifikasi AI/Admin" : "Masuk Saldo JConnect"}</span></td></tr>`;
       });
-      $("#activityTitle").textContent = "Riwayat setoran";
+      $("#activityTitle").textContent = "Riwayat setoran warga";
       $("#activityMeta").textContent = `${deps.length} setoran terakhir dalam ${rangeLabel}`;
     } else if (role === "rw") {
       head.innerHTML = `<tr><th scope="col">RT</th><th scope="col" class="num">Rumah tangga</th><th scope="col" class="num">Berat</th><th scope="col" class="num">Dana RW</th><th scope="col">Laporan</th></tr>`;
@@ -911,23 +968,25 @@
       rows = weights.map((w, i) => {
         const k = total * w;
         const active = Math.min(hh[i], Math.round(hh[i] * (0.55 + w)));
-        return `<tr><td>RT ${String(i + 1).padStart(2, "0")}</td><td class="num">${active}/${hh[i]}</td><td class="num">${kg(k)}</td><td class="num">${rp(k * UE.rwFundPerKg)}</td><td><span class="status status-ok">Tersedia</span></td></tr>`;
+        return `<tr><td>RT ${String(i + 1).padStart(2, "0")} Keputih</td><td class="num">${active}/${hh[i]} KK</td><td class="num">${kg(k)}</td><td class="num">${rp(k * UE.rwFundPerKg)}</td><td><span class="status status-ok">Tersedia</span></td></tr>`;
       });
-      $("#activityTitle").textContent = "Rekap per RT";
-      $("#activityMeta").textContent = `Periode ${rangeLabel} · contoh pembagian`;
+      $("#activityTitle").textContent = "Rekap setoran per RT";
+      $("#activityMeta").textContent = `Periode ${rangeLabel} · RW 05 Keputih Sukolilo`;
     } else {
-      head.innerHTML = `<tr><th scope="col">Tanggal angkut</th><th scope="col">Tujuan</th><th scope="col" class="num">Diterima</th><th scope="col" class="num">Ditolak</th><th scope="col" class="num">Nilai</th></tr>`;
+      head.innerHTML = `<tr><th scope="col">Tanggal angkut</th><th scope="col">Tujuan Pabrik / Mitra</th><th scope="col" class="num">Diterima</th><th scope="col" class="num">Ditolak</th><th scope="col" class="num">Nilai</th></tr>`;
       const trips = [];
       for (let i = cur.length - 1; i >= 0 && trips.length < 6; i--) {
         const d = cur[i];
         if ([0, 3, 6].includes(d.dow) && dayKg(d, material) > 0) trips.push(d);
       }
+      const buyers = ["Pabrik Daur Ulang Plastik (Rungkut)", "Pabrik Kertas & Karton (Ngagel)", "Pengepul Logam & Kaca (Kenjeran)"];
       rows = trips.map((d, i) => {
         const k = dayKg(d, material);
         const acc = k * d.acceptRate;
-        return `<tr><td>${esc(DATE_LONG.format(d.date))}</td><td>Mitra pembeli ${i % 2 ? "B" : "A"} (contoh)</td><td class="num">${kg(acc)}</td><td class="num">${kg(k - acc)}</td><td class="num">${rp(acc * UE.pricePerKg)}</td></tr>`;
+        const b = buyers[i % buyers.length];
+        return `<tr><td>${esc(DATE_LONG.format(d.date))}</td><td>${b}</td><td class="num">${kg(acc)}</td><td class="num">${kg(k - acc)}</td><td class="num">${rp(acc * UE.pricePerKg)}</td></tr>`;
       });
-      $("#activityTitle").textContent = "Pengiriman ke mitra pembeli";
+      $("#activityTitle").textContent = "Pengiriman ke pabrik daur ulang";
       $("#activityMeta").textContent = `${trips.length} pengiriman terakhir dalam ${rangeLabel}`;
     }
     body.innerHTML = rows.length ? rows.join("") : `<tr class="empty-row"><td colspan="5">Belum ada aktivitas untuk filter ini dalam ${esc(rangeLabel)}.</td></tr>`;
@@ -998,7 +1057,7 @@
         svg("rect", { x: hx + 11, y: hy + 18, width: 8, height: 12, fill: active ? COLORS.emerald : "rgba(14,28,21,0.25)" }, g);
       }
       const t = svg("text", { x: b.x + 48, y: b.y + 112, "text-anchor": "middle" }, g);
-      t.textContent = "RT " + String(i + 1).padStart(2, "0");
+      t.textContent = "RT " + String(i + 1).padStart(2, "0") + " Keputih";
       const sx = b.x + 48, sy = b.y < 150 ? b.y + 118 : b.y;
       svg("path", { d: `M${sx} ${sy} Q${sx} ${point.y} ${point.x} ${point.y}`, fill: "none", stroke: COLORS.emerald, "stroke-width": 1.6, class: "route", opacity: 0.8 }, routes);
     });
@@ -1015,11 +1074,11 @@
     svg("path", { d: `M${point.x + 34} ${point.y} H${bx}`, stroke: COLORS.ink, "stroke-width": 2, "stroke-dasharray": "4 5", fill: "none" }, root);
     svg("rect", { x: bx, y: by, width: 96, height: 60, rx: 10, fill: COLORS.ink }, root);
     const t1 = svg("text", { x: bx + 48, y: by + 26, "text-anchor": "middle", fill: COLORS.limeBright, style: "fill:#C8E86E" }, root);
-    t1.textContent = "Mitra";
+    t1.textContent = "Pabrik / Mitra";
     const t2 = svg("text", { x: bx + 48, y: by + 42, "text-anchor": "middle", style: "fill:#C8E86E" }, root);
-    t2.textContent = "pembeli";
+    t2.textContent = "Daur Ulang";
     const tp = svg("text", { x: point.x, y: point.y + 52, "text-anchor": "middle", style: "fill:#0E1C15;font-weight:600" }, root);
-    tp.textContent = "Titik kumpul RW";
+    tp.textContent = "Pos Timbang RW 05";
 
     // legenda
     const lg = svg("g", { transform: "translate(452 260)" }, root);
@@ -1088,14 +1147,14 @@
     const card = (s, cls) => {
       const known = s.fundingNeed != null;
       return `<div class="scenario ${cls}">
-        <span class="tag tag-proj">Proyeksi model</span>
+        <span class="tag tag-proj">Proyeksi model proposal</span>
         <h4>${esc(s.label)}</h4>
         <p class="sv ${known ? "" : "pending"}">${known ? esc(rpJuta(s.fundingNeed)) : "Menunggu angka proposal"}</p>
-        <p>${s.runwayMonths != null ? `Runway ${NF.int.format(s.runwayMonths)} bulan.` : "Kebutuhan pendanaan dan runway akan ditampilkan persis seperti di proposal."}</p>
+        <p>${s.runwayMonths != null ? `Kebutuhan dana 3 tahap dengan runway kas ${NF.int.format(s.runwayMonths)} bulan.` : "Kebutuhan pendanaan dan runway ditampilkan persis sesuai proposal."}</p>
       </div>`;
     };
     $("#scenarioGrid").innerHTML = card(fs.base, "base") + card(fs.adverse, "adverse") +
-      `<div class="scenario-ebitda"><strong>EBITDA negatif di Tahun 1–3.</strong> Skenario ini menggambarkan kebutuhan dana untuk menutup kekurangan tersebut, bukan hasil keuangan yang sudah terjadi atau dijamin.</div>`;
+      `<div class="scenario-ebitda"><strong>EBITDA negatif di Tahun 1–3 (Tabel 11).</strong> Defisit operasional menyempit dari −Rp33,8 juta (Th 1) ke −Rp15,5 juta (Th 3), menuju titik impas kas di bulan ke-52 (~24 RW matang).</div>`;
 
     const box = $("#auditBox");
     if (!D.meta.showDataAudit) { box.hidden = true; return; }
@@ -1113,7 +1172,11 @@
     const el = $("#footerContact");
     const c = D.contact;
     if (c) {
-      el.innerHTML = `<h3>Kontak</h3>` + Object.values(c).map((v) => `<p>${esc(v)}</p>`).join("");
+      el.innerHTML = `<h3>Tim Pengembang</h3>
+        <p><strong>${esc(c.team)}</strong></p>
+        <p>${esc(c.institution)}</p>
+        <p>${esc(c.city)}</p>
+        <p class="fine" style="margin-top:0.4rem;color:var(--lime)">${esc(c.competition)}</p>`;
       return;
     }
     el.innerHTML = `<h3>Arti label data</h3>

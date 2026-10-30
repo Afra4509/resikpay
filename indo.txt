@@ -1,0 +1,3307 @@
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+YED UI 2026 | BABAK SEMIFINAL
+PROPOSAL RENCANA BISNIS
+
+ResikPay: Platform Pemilahan dan Hadiah Rumah
+Tangga Berbantuan AI yang Menghubungkan
+Lingkungan Warga, Bank, dan Pemerintah Kota
+Kategori
+Universitas
+Nama Tim
+Skem Hunter
+Ketua Tim
+Adzikra Luthfia Agustoni
+Anggota Tim
+Afra Fadhma Dinata
+Rabbani Paundra M
+Institusi
+Institut Teknologi Sepuluh Nopember
+Surabaya, Indonesia
+
+2026
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+DAFTAR ISI
+1. RINGKASAN EKSEKUTIF . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+2. LATAR BELAKANG . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2.1 Gambaran nasional . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2.2 Surabaya . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2.3 Preseden lokal . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+2.4 Kaitan dengan keselarasan keberlanjutan . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+
+3. ANALISIS MASALAH . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+3.1 Akar masalah . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+3.2 Keterbatasan solusi yang ada . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+3.3 Peluang . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+
+4. SOLUSI YANG DIUSULKAN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+4.1 Sistem ResikPay . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+4.2 Komponen AI dan batasannya . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+4.3 Mengapa berbeda . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+4.4 Desain hadiah . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+5. MODEL BISNIS . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+5.1 Pelanggan, mitra, dan siapa yang membayar . . . . . . . . . . . . . . . . . . . . . . . . . 5
+5.2 Sumber pendapatan . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+5.3 Unit ekonomi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+5.4 Rencana validasi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+
+6. ANALISIS PASAR . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+6.1 Ukuran pasar . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+6.2 Karakteristik pelanggan dan tren . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+6.3 Pesaing dan posisi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+7. STRATEGI PEMASARAN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+7.1 Positioning dan akuisisi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+7.2 Corong akuisisi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+7.3 Retensi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+7.4 Penjualan institusional . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+8. RENCANA OPERASIONAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+ii
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+8.1 Proses operasi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+8.2 Sumber daya dan biaya . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+8.3 Pengendalian mutu . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+8.4 Pertanyaan hukum dan kepatuhan . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+9. KELAYAKAN KEUANGAN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+9.1 Dasar dan definisi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+9.2 Audit model dan koreksi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+9.3 Proyeksi . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+9.4 Permintaan dana, penggunaan dana, dan gerbang tiap tahap . . . . . . . . . . . . . . . . 13
+9.5 Sensitivitas, penggerak, dan tindakan korektif . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+10. DAMPAK KEBERLANJUTAN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+11. ANALISIS RISIKO DAN MITIGASI . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+12. KESIMPULAN . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+REFERENSI . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+LAMPIRAN A. GARIS BESAR SURVEI RUMAH TANGGA PRA-PILOT . . . . . . . 20
+LAMPIRAN B. PROTOKOL VALIDASI . . . . . . . . . . . . . . . . . . . . . . . . . . 20
+LAMPIRAN C. JADWAL ARUS KAS BULANAN (KASUS DASAR, DENGAN TIGA
+TAHAP PENDANAAN) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+LAMPIRAN D. REGISTER ASUMSI DAN JEJAK PERHITUNGAN UKURAN PASAR 23
+LAMPIRAN E. GLOSARIUM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+iii
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+1. RINGKASAN EKSEKUTIF
+Masalah. Indonesia mencatat sekitar 36,9 juta ton sampah pada 2024, dan hanya 32,3%
+yang terkelola dengan baik [1]. Di Surabaya, Dinas Lingkungan Hidup (DLH)
+memperkirakan 1.800 ton per hari dari sekitar 3 juta penduduk, sementara TPA Benowo
+menerima 1.300 sampai 1.500 ton per hari [6]. Kota ini memiliki lebih dari 600 bank
+sampah, tetapi menurut DLH hanya mengurangi 1 sampai 2 ton per hari [4][5]. Warga
+yang ingin memilah menghadapi pekerjaan yang hasilnya kecil, dan tidak ada catatan
+setoran terverifikasi yang bisa dipercaya pembeli, kantor kota, atau bank.
+Pelanggan dan solusi. ResikPay memindahkan pemilahan ke tingkat RW. Rumah
+tangga memilah dengan panduan di aplikasi dan membawa sampah kering ke hari setor
+mingguan. Admin RW menimbang dan memotret muatan, lalu buku besar mencatat
+poin. Pendaur ulang menjemput bal terpilah dengan harga yang disepakati, dan poin
+masuk ke rekening rumah tangga hanya setelah pendaur ulang membayar. Pendaur
+ulang membayar material. DLH menjadi pelanggan institusional pertama, untuk laporan
+setoran tingkat kelurahan. Bank Jatim dan produsen adalah calon mitra dan tidak
+dihitung dalam kasus dasar.
+Pembeda. ResikPay bukan armada pengumpulan baru. Keunggulannya adalah catatan
+transaksi terverifikasi yang dibuat di lingkungan tempat sampah dipilah, dengan AI
+untuk memangkas waktu verifikasi dan menandai anomali. Pesaing mungkin
+menawarkan sebagian rantai ini. Kami tidak menemukan bukti publik tentang layanan
+rumah tangga yang menggabungkan semuanya (Bagian 6.3).
+Prospek keuangan. Model disusun dari bawah untuk tim mahasiswa: 5, 12, dan 20 RW
+pada akhir Tahun 1 sampai 3, dengan 1.518 rumah tangga aktif bulanan di Tahun 3.
+Setiap kilogram yang terjual memberi kontribusi sekitar Rp878 sebelum biaya tetap.
+EBITDA tetap negatif sampai Tahun 3 dan menjadi positif di jalur perpanjangan pada
+bulan 52 (dibutuhkan sekitar 24 RW yang sudah matang). Kebutuhan dana puncak 36
+bulan adalah Rp122,3 juta, dan kami meminta Rp130 juta dalam tiga tahap yang
+dikaitkan dengan gerbang evaluasi. Untuk mencapai titik impas kas, jalur perpanjangan
+membutuhkan tambahan Rp27 juta kecuali pendapatan upside datang.
+Dampak. Dalam tiga tahun pilot mengumpulkan 91 ton, dengan sekitar 87 ton
+diperkirakan diterima pembeli, serta membayar Rp70 juta kepada rumah tangga dan
+Rp16 juta kepada dana RW. Penghematan emisi gas rumah kaca baru kami laporkan
+setelah pilot menghasilkan data per jenis material.
+Status bukti. Sampai proposal ini ditulis, belum ada survei, surat minat, perjanjian
+kemitraan, atau uji AI yang selesai. Setiap butir validasi adalah rencana dengan ambang
+batas dan aturan keputusan (Bagian 5.4). Angka diberi label bersumber, turunan, asumsi,
+atau target.
+
+1
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+2. LATAR BELAKANG
+2.1 Gambaran nasional
+SIPSN, sistem informasi pengelolaan sampah nasional, mencatat sekitar 36,9 juta ton
+sampah pada 2024 dengan porsi terkelola dengan baik 32,3% [1]. Total yang dilaporkan
+bergeser antar-snapshot; pemberitaan untuk tahun yang sama menyebut 32,8 sampai
+34,9 juta ton [2], sehingga tim akan memastikan angkanya di SIPSN sebelum
+pengumpulan. Menurut komposisi, sisa makanan sekitar 39% dari total, plastik sekitar
+19,5%, kertas dan karton sekitar 11,1%, logam sekitar 3,4%, dan kaca sekitar 2,4%
+[2][3]. Empat yang terakhir adalah fraksi kering yang bisa dipilah rumah tangga. Aturan
+bagi produsen makin ketat: Peraturan Menteri LHK P.75/2019 mewajibkan produsen,
+ritel, dan usaha jasa makanan mengurangi sampahnya sebesar 30% dari timbulan pada
+2029 [13].
+2.2 Surabaya
+Surabaya memiliki sekitar 3,0 juta penduduk [9] dan sekitar 1.360 RW (statistik kota
+tahun 2016, perlu diperbarui) [10]. DLH memakai angka teoretis 0,6 kg per orang per
+hari, atau sekitar 1.800 ton per hari, dan melaporkan bahwa TPA Benowo menerima
+1.300 sampai 1.500 ton per hari [6][7]. Pernyataan pemerintah kota menyebut sekitar
+60% sampah Surabaya berasal dari rumah tangga [8]. DLH mencatat lebih dari 600 bank
+sampah, yang menurutnya hanya mengurangi sampah 1 sampai 2 ton per hari dan belum
+bekerja optimal [4][5]. Target khusus plastik sebesar 5 ton per hari telah diumumkan
+untuk kolaborasi bank sampah [5].
+2.3 Preseden lokal
+Warga Surabaya merespons ketika sampah punya harga. Suroboyo Bus, yang
+diluncurkan pada 2018, menerima botol plastik sebagai ongkos [11], dan pemberitaan
+saat itu menyebut sekitar 12 ton terkumpul dalam beberapa bulan pertama [12]. DLH
+merencanakan Bank Sampah Induk untuk menghubungkan bank sampah kelurahan
+dengan pabrik kertas dan plastik [5][20]. Di sisi keuangan, aplikasi JConnect Bank Jatim
+mencapai sekitar 993.000 pengguna dan bank menargetkan 2 juta pada akhir 2026
+[14][15].
+2.4 Kaitan dengan keselarasan keberlanjutan
+Business Model Canvas babak pendahuluan menyebut lima keselarasan: teknologi
+keuangan rumah tangga, lingkungan nol sampah, penghubung lintas sektor, kas
+komunitas yang transparan, dan aliran sirkular PET, kertas, serta karton ke pendaur
+ulang. Rencana ini menjadikan masing-masing fitur operasional: hari setor mingguan,
+buku besar yang terlihat warga, hadiah yang dibayarkan lewat bank, dan penjualan ke
+pendaur ulang, bukan ke TPA. Rencana ini mendukung SDG 8, 11, 12, 13, dan 17.
+
+2
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+3. ANALISIS MASALAH
+3.1 Akar masalah
+Tabel 1. Akar masalah rendahnya pemulihan sampah rumah tangga dan respons ResikPay
+Akar masalah
+
+Bukti dan status
+
+Respons ResikPay
+
+Memilah memakan
+waktu dan
+imbalannya kecil
+
+Bank sampah hanya mengurangi 1 sampai Hari setor mingguan di dalam RW;
+poin dikreditkan per setoran
+2 ton/hari se-kota [4]. Motivasi rumah
+tangga adalah hipotesis yang akan diuji
+terverifikasi
+(Bagian 5.4)
+
+Warga mungkin tidak Fraksi kering sekitar 36% dari sampah
+tahu barang apa yang nasional menurut bobot [2][3]. Tingkat
+laku dijual
+pengenalan belum diuji (Lampiran A)
+
+Panduan aplikasi saat memilah
+
+Tidak ada catatan
+setoran terpadu pada
+sumber yang ditinjau
+
+Total berbeda antar-snapshot SIPSN
+[1][2]. Kami tidak menemukan data
+setoran per RW yang terbuka untuk
+Surabaya
+
+Jalur ke pendaur
+ulang bisa lambat
+
+DLH merencanakan Bank Sampah Induk Pembeli dan jadwal jemput
+karena bank sampah belum punya saluran disepakati sebelum RW dimulai
+penjualan yang andal [5]
+
+Hadiah kecil sulit
+dicairkan
+
+Hipotesis: buku tabungan kertas dan
+hadiah barang tidak menghasilkan saldo
+yang bisa dibelanjakan
+
+Buku besar terverifikasi per RW
+dan kelurahan
+
+Poin dicairkan ke saldo bank atau
+dompet digital setelah pembeli
+membayar
+
+3.2 Keterbatasan solusi yang ada
+Bank sampah membayar warga untuk material terpilah, tetapi bergantung pada relawan
+dan jam buka tetap [4]. Waste4Change dan Rekosistem menjalankan layanan
+penjemputan dan pemulihan yang dioperasikan perusahaan sendiri [22][23]. Gringgo
+memakai AI untuk mengenali sampah dan memperkirakan nilainya bagi pengumpul di
+Bali [21]. Masing-masing menangani satu mata rantai. Bagian 6.3 membandingkannya
+fitur demi fitur dan menandai apa yang tidak bisa kami verifikasi.
+3.3 Peluang
+Sekitar 1.360 RW memberi kota jaringan pemimpin dan tempat pertemuan yang siap
+pakai. JConnect membutuhkan alasan agar warga memakai rekening [14][15].
+P.75/2019 menciptakan permintaan produsen akan data pemulihan yang kredibel [13],
+meskipun belum ada produsen yang berkomitmen membelinya. Pengklasifikasi gambar
+ringan berjalan di ponsel kelas menengah [18][19], sehingga pos RW tidak
+membutuhkan perangkat baru selain timbangan.
+
+4. SOLUSI YANG DIUSULKAN
+4.1 Sistem ResikPay
+Aplikasi warga (Android dan web) menyediakan panduan pemilahan, pemesanan
+setoran, dompet poin, dan papan peringkat RW. Konsol admin berjalan di ponsel admin
+RW untuk menimbang, memotret, menangani pengecualian, dan menjadwalkan
+penjemputan. Dasbor menampilkan ton per material, RW, dan kelurahan, ditambah
+tingkat partisipasi dan penolakan, serta mengekspor laporan bulanan.
+
+3
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Gambar 1. Alur material, data, dan nilai di ResikPay
+
+Satu setoran dalam lima langkah. Warga memilah di rumah dan membawa sampah
+kering pada hari setor. Admin menimbang muatan di timbangan RW dan memotret
+muatan beserta tampilan timbangan. AI menyarankan label dan admin mengonfirmasi
+atau mengoreksinya. Buku besar mencatat poin. Ketika pembeli menjemput dan
+membayar, poin berpindah ke rekening rumah tangga dan porsi dana RW dibukukan.
+4.2 Komponen AI dan batasannya
+AI memiliki tiga tugas sempit: menyarankan kategori untuk barang atau muatan,
+memberi label awal pada foto setoran agar admin tinggal mengonfirmasi, dan menandai
+duplikat atau entri yang tidak masuk akal. Foto tidak bisa menentukan bobot atau isi di
+bawah lapisan atas kantong, sehingga AI tidak pernah menggantikan timbangan atau
+admin. Bobot berasal dari angka timbangan yang difoto admin, dan angka timbangan
+jembatan pembeli menjadi pemeriksaan independen untuk setiap bal.
+Tabel 2. Taksonomi klasifikasi dan fungsinya
+Kelas
+
+Dipakai untuk
+
+Catatan
+
+Botol PET; plastik keras HDPE dan
+PP
+
+Panduan dan pelabelan awal
+
+Tingkat harga dikonfirmasi dengan pembeli
+
+Kertas dan karton (bersih, kering)
+
+Panduan dan pelabelan awal
+
+Kertas basah atau kotor menjadi penolakan
+
+Kaleng logam
+
+Panduan dan pelabelan awal
+
+Aluminium dan baja dipisah jika pembeli
+membayar berbeda
+
+Kaca
+
+Hanya panduan
+
+Diterima hanya jika pembeli lokal terkonfirmasi
+
+Plastik lentur, sachet multilapis
+
+Ditandai "tanya pembeli"
+
+Nilai rendah atau nol; dikeluarkan dari harga
+dasar sampai ada pembeli yang berkomitmen
+
+Organik dan residu
+
+Hanya panduan
+
+Tidak disetor; dikelola di rumah atau lewat
+saluran TPS yang ada
+
+Rencana validasi teknis. Tim mengumpulkan dan melabeli foto selama pilot dan
+menyusun set uji dari kejadian setoran yang terpisah. Gambar dibagi menurut rumah
+tangga dan hari setor (bukan per gambar) menjadi sekitar 70% data latih, 15% validasi,
+dan 15% uji tertahan, sehingga foto barang yang sama tidak berada di kedua sisi.
+Gambar yang hampir kembar dibuang dengan perceptual hashing sebelum pembagian,
+dan dua penganotasi melabeli 10% data yang sama untuk memeriksa kesepakatan
+(kappa Cohen 0,7 atau lebih). Model dilaporkan per kelas dengan presisi, recall, F1, dan
+matriks konfusi, serta pada setoran campuran secara terpisah dari barang tunggal. Target
+
+4
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+operasional: inferensi di bawah 1,5 detik pada ponsel kelas menengah, verifikasi di
+bawah 30 detik per setoran, dan tingkat koreksi admin paling tinggi 20% pada bulan 12
+dan 15% pada bulan 18. Waktu verifikasi, tingkat penolakan, dan beban kerja admin
+dibandingkan dengan baseline manual yang diukur di RW pertama. Semua ini target:
+belum ada akurasi yang dicapai atau diuji.
+Pembangunan bertahap. Aplikasi dan modul AI yang layak dipercaya sebaiknya tidak
+dibeli sebagai satu paket, sehingga rencana ini memisahkannya. MVP manual dan
+berbantuan aturan (buku besar, konsol admin, aplikasi web warga) berbiaya Rp10 juta
+sebelum peluncuran, sebagian besar kerja tim ditambah hosting dan bantuan freelance.
+Modul AI (Rp8 juta, bulan 7 sampai 9) baru dimulai setelah ada paling sedikit 3.000
+foto lokal berlabel. Kedua angka adalah estimasi; dua penawaran dari pengembang
+masih menjadi celah bukti.
+4.3 Mengapa berbeda
+Tiga pilihan desain membedakan ResikPay dari opsi di Bagian 6.3. Poin dicairkan hanya
+setelah pembeli membayar bal tersebut, sehingga kolam hadiah tidak pernah mendahului
+kas. Admin RW memverifikasi setoran dengan bantuan AI, yang mengubah peran
+lingkungan yang sudah ada menjadi lapisan kepercayaan. Satu buku besar melayani
+warga, RW, DLH, dan kelak produsen. Aset yang bisa dipertahankan adalah catatan
+transaksi terverifikasi ini, dataset lokal, dan hubungan dengan RW; pengklasifikasinya
+sendiri bisa diganti.
+4.4 Desain hadiah
+Satu poin sama dengan Rp1. Rumah tangga menerima 35% dari nilai jual material yang
+diterima, sekitar Rp805 per kg, atau sekitar Rp37 ribu per tahun untuk rumah tangga
+yang menyetor 4 kg per bulan. Jumlah itu kecil dan mungkin tidak cukup menahan
+partisipasi. Karena itu desainnya menambah dana RW yang terlihat, papan peringkat,
+dan ritme pembayaran bulanan (Bagian 7.3). Pembayaran lewat mitra bank atau dompet
+digital dengan ambang Rp25.000, karena transfer bank dikenai biaya hingga Rp2.500
+per transaksi [24]. Saldo yang terkumpul ada pada mitra pembayaran, bukan pada
+ResikPay; apakah struktur ini tetap di luar aturan uang elektronik dan jasa pembayaran
+adalah pertanyaan untuk konsultan hukum (Bagian 8.4).
+
+5. MODEL BISNIS
+5.1 Pelanggan, mitra, dan siapa yang membayar
+Rumah tangga dan admin RW memakai ResikPay secara gratis dan menerima hadiah.
+Pendapatan berasal dari pembeli material dan, mulai bulan 19, dari DLH. Bank dan
+produsen diperlakukan sebagai upside sampai mereka menandatangani kesepakatan.
+
+5
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Tabel 3. Segmen pelanggan dan mitra
+Segmen
+
+Masalah
+
+Nilai dan insentif
+
+Pembayaran Siklus
+penjualan
+(asumsi)
+
+Bukti yang
+dibutuhkan
+
+Rumah tangga
+
+Memilah adalah
+pekerjaan tanpa
+imbalan yang
+terlihat
+
+Panduan, titik setor
+dekat, poin
+
+Tidak ada;
+menerima
+hadiah
+
+Beberapa
+minggu
+
+15% menyetor dalam 4
+minggu
+
+Admin dan
+pengurus RW
+
+Pemasukan
+komunitas kecil;
+beban kerja
+
+Porsi dana 8%,
+konfirmasi dibantu AI
+
+Tidak ada;
+menerima
+dana
+
+1 sampai 2
+bulan
+
+70% bersedia menjadi
+tuan rumah
+
+Pendaur ulang,
+pengepul
+
+Pasokan tidak
+terpilah dan tidak
+terlacak
+
+Bal terpilah, jadwal,
+buku besar
+
+Per kg, 30
+hari
+
+1 sampai 3
+bulan
+
+LOI dengan harga dasar
+
+DLH Surabaya
+
+Tidak punya
+gambaran
+pengalihan
+sampah di tingkat
+setoran
+
+Dasbor kelurahan,
+laporan bulanan
+
+Biaya lewat
+MoU
+
+6 sampai 18
+bulan
+
+Surat minat tertulis dan
+jalur pembayaran yang
+sah
+
+Bank Jatim
+(mitra)
+
+Membutuhkan
+pengguna digital
+aktif
+
+Kanal pembayaran,
+rekening baru
+
+Hanya upside Belum
+diketahui
+
+LOI bertanda tangan
+
+Produsen
+(P.75/2019)
+
+Membutuhkan
+bukti pemulihan
+
+Laporan siap audit per
+RW
+
+Hanya upside Belum
+diketahui
+
+Wawancara calon
+pembeli
+
+5.2 Sumber pendapatan
+Penjualan material daur ulang adalah dasar pendapatan. Harga campuran Rp2.300 per
+kg adalah asumsi. Daftar harga yang dipublikasikan sangat bervariasi, dari beberapa
+ratus rupiah per kg untuk kertas campur sampai beberapa ribu untuk plastik terpilah, dan
+laporan Kompas menyebut plastik bersih ditawarkan hingga Rp10.000 per kg [16][17].
+Harga bergerak mengikuti pasar komoditas dan penilaian mutu oleh pembeli, sehingga
+rencana memperhitungkan 5% bobot ditolak dan menguji penurunan harga 15% (Bagian
+9.6). Harga pembeli akan dikunci lewat surat minat sebelum RW dimulai.
+Biaya laporan DLH sebesar Rp1,5 juta per bulan mulai bulan 19, setelah pilot gratis.
+Ini hipotesis harga. Alasan kami: biaya itu setara petugas data lapangan paruh waktu dan
+kecil dibanding Rp136 miliar yang dibayar kota untuk biaya tipping TPA pada 2023 [7],
+tetapi kami belum punya konfirmasi DLH dan lembaga publik bisa saja tidak boleh
+membayar biaya langsung. Validasi membutuhkan pernyataan minat tertulis, pos
+anggaran atau jalur pengadaan yang akan dipakai DLH, dan perbandingan dengan cara
+DLH mengumpulkan data bank sampah saat ini. Jika DLH tidak bisa membayar, kasus
+dasar membutuhkan tambahan Rp27 juta selama 36 bulan (Bagian 9.6), dan dasbor yang
+disponsori menjadi cadangan.
+Upside yang tidak masuk kasus dasar: biaya per rekening Bank Jatim yang
+diaktifkan, laporan pemulihan terverifikasi untuk produsen, dan sponsor CSR untuk
+kolam hadiah. Belum ada satu pun pihak yang menjadi lawan transaksi.
+5.3 Unit ekonomi
+
+6
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Tabel 4. Unit ekonomi (kasus dasar)
+Rp
+
+Per kg diterima Per rumah tangga aktif per
+bulan (4 kg terkumpul)
+
+Per RW matang per bulan
+(90 rumah tangga)
+
+Nilai jual
+
+2.300
+
+8.740
+
+786.600
+
+Hadiah rumah tangga (35%)
+
+(805)
+
+(3.059)
+
+(275.310)
+
+Dana RW (8%)
+
+(184)
+
+(699)
+
+(62.928)
+
+Angkutan (Rp150/kg terkumpul)
+
+(158)
+
+(600)
+
+(54.000)
+
+Margin kontribusi sebelum biaya
+platform
+
+1.153
+
+4.382
+
+394.362
+
+(1.044)
+
+(93.933)
+
+3.338
+
+300.429
+
+Biaya variabel platform dan alokasi
+pajak omzet
+Kontribusi setelah biaya variabel
+
+878
+
+Margin kontribusi adalah pendapatan dikurangi biaya variabel untuk melayani satu unit. Laba kotor
+(Bagian 9) hanya mengurangi hadiah, dana RW, dan angkutan dari pendapatan. RW matang adalah RW
+yang berusia lebih dari 12 bulan, dengan 20% dari 450 rumah tangga sasarannya aktif. Dibutuhkan
+sekitar 24 RW matang untuk menutup biaya tetap, sehingga data pilot 12 bulan pertama menentukan
+apakah model bisa berkembang.
+
+5.4 Rencana validasi
+Tabel 5. Eksperimen validasi (protokol lengkap di Lampiran B)
+Hipotesis
+
+Ambang batas
+
+Keputusan jika tidak tercapai
+
+H1 Rumah tangga akan menyetor tiap
+minggu
+
+Niat yang dinyatakan 40% atau lebih;
+setoran teramati 15% atau lebih dalam 4
+minggu
+
+Rancang ulang hadiah dan ritme
+setor; jangan tambah RW
+
+H2 Pengurus RW bersedia menjadi
+tuan rumah dan memverifikasi
+
+70% dari 10 ketua setuju; verifikasi paling
+lama 30 dtk
+
+Ganti model tuan rumah (kantor
+kelurahan, PKK)
+
+H3 Pendaur ulang membayar paling
+sedikit harga dasar
+
+LOI dari 2 pembeli dengan Rp2.000/kg
+atau lebih secara campuran
+
+Sesuaikan hadiah; uji pembeli
+tambahan
+
+H4 Hadiah sepadan dengan usahanya
+
+Median hadiah minimum yang diterima
+paling tinggi Rp4.000 per bulan
+
+Tambah manfaat non-tunai atau
+naikkan porsi hadiah
+
+H5 Pembayaran terekonsiliasi tanpa
+perbaikan manual
+
+Nol selisih tak terjelaskan selama 2 siklus
+(100 rumah tangga)
+
+Perbaiki buku besar sebelum
+pembayaran berikutnya
+
+H6 DLH menilai dasbor berguna dan
+mampu membayar
+
+Niat tertulis Rp1,5 juta/bulan atau lebih,
+dengan jalur pembayaran
+
+Hitung model tanpa DLH; cari
+sponsor
+
+H7 AI mengurangi beban verifikasi
+
+30 dtk atau kurang per setoran; koreksi
+paling tinggi 20% pada bulan 12
+
+Pertahankan alur manual; tunda
+belanja AI
+
+6. ANALISIS PASAR
+6.1 Ukuran pasar
+Kami mengukur pasar untuk sampah kering rumah tangga yang akan diambil pembeli,
+memakai masukan bersumber bila ada dan menandai asumsi. Perhitungan Surabaya
+berawal dari 0,6 kg per orang per hari menurut DLH [6], dengan porsi rumah tangga
+60% [8], porsi kering 36,4% (plastik, kertas, logam, dan kaca SIPSN 2024 [2][3]) dan
+faktor 70% yang layak dijual (asumsi: kertas kotor dan plastik multilapis dikeluarkan).
+Jejak lengkapnya ada di Lampiran D.
+
+7
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Tabel 6. Ukuran pasar
+Tingkat
+
+Definisi
+
+Ton per tahun
+
+Nilai pada
+Rp2.300/kg
+
+TAM (indikatif)
+
+Indonesia: 36,9 juta ton [1] x 50% rumah tangga
+(asumsi) x 36,4% kering x 70% layak jual
+
+4,7 juta
+
+Rp10,8 triliun
+
+SAM
+
+Rumah tangga Surabaya (860 ribu pada 3,5 jiwa): 276
+ton/hari layak jual
+
+101 ribu
+
+Rp232 miliar
+
+57,2 terkumpul
+(0,06% dari SAM)
+
+Rp125 juta
+
+SOM, Tahun 3 (dari 20 RW x 450 rumah tangga, 1.518 aktif, 4 kg/bulan
+bawah)
+
+Pemeriksaan: SAM menyiratkan 9,6 kg sampah kering layak jual per rumah tangga per bulan. Rumah
+tangga yang menyetor 4 kg menangkap 41% darinya. Angka per kapita semua sumber tidak boleh dipakai
+sebagai angka rumah tangga, sehingga pilot harus mengukur kilogram per rumah tangga yang
+sebenarnya.
+
+SOM adalah keluaran rencana operasi (RW yang dimasuki, partisipasi, kilogram), bukan
+pangsa dari pasar teoretis. SOM juga memperlihatkan batas model ini: RW matang
+menghasilkan sekitar Rp9,4 juta penjualan per tahun, sehingga pendapatan bergantung
+pada jumlah RW matang.
+6.2 Karakteristik pelanggan dan tren
+Pengguna awal tinggal di kampung atau perumahan klaster tempat ketua RW bisa
+mengumpulkan warga dalam satu pertemuan, memiliki ponsel pintar, dan mengenal
+bank sampah setempat. Perbankan digital tumbuh: JConnect mencapai sekitar 993.000
+pengguna dan menargetkan 2 juta pada akhir 2026 [14][15]. P.75/2019 menetapkan
+sasaran pengurangan bagi produsen [13], dan DLH membangun jalur Bank Sampah
+Induk ke pabrik [5][20].
+6.3 Pesaing dan posisi
+Tabel 7. Matriks pesaing (apa yang ditunjukkan sumber publik; "tidak ditemukan" berarti tidak
+ditemukan pada sumber yang ditinjau, bukan terbukti tidak ada)
+Pemain
+
+Insentif rumah Verifikasi tingkat
+tangga
+lingkungan
+
+Pemilahan
+AI
+
+Data teraudit untuk
+kota/produsen
+
+Sumber
+
+Bank sampah
+(termasuk Bank
+Sampah Induk)
+
+Ya: tabungan
+
+Ya: manual oleh
+pengurus
+
+Tidak
+ditemukan
+
+Tidak ditemukan sebagai
+buku besar terpadu
+
+[4][5][20]
+
+Waste4Change
+
+Belum
+diverifikasi
+
+Tidak berlaku:
+penjemputan oleh
+perusahaan
+
+Tidak
+ditemukan
+
+Pelaporan untuk klien
+korporat (belum
+diverifikasi rinci)
+
+[22]
+
+Rekosistem
+
+Ya: hadiah di
+aplikasi
+
+Stasiun dan hub
+perusahaan
+
+Tidak
+ditemukan
+
+Belum diverifikasi
+
+[23]
+
+Gringgo
+
+Perkiraan nilai Tidak ditemukan
+bagi pengumpul
+
+Ya:
+pengenalan
+sampah
+
+Belum diverifikasi
+
+[21]
+
+Suroboyo Bus
+
+Ya: kredit
+ongkos untuk
+botol
+
+Belum diverifikasi
+
+Tidak
+ditemukan
+
+Belum diverifikasi
+
+[11][12]
+
+ResikPay (rencana)
+
+Ya: poin, dana
+RW
+
+Ya: admin RW
+dengan cek AI
+
+Direncanakan
+(belum diuji)
+
+Buku besar dan laporan
+direncanakan
+
+Rencana ini
+
+Pemain yang ada sudah menutup sebagian rantai, sehingga klaim teknologi saja tidak
+cukup. Argumen ResikPay bertumpu pada tiga keunggulan yang masih harus
+dibuktikan: biaya verifikasi lebih rendah di RW, catatan transaksi yang dipercaya DLH
+dan pembeli, serta adopsi lokal lewat pemimpin RW. Rumah tangga dan pembeli hanya
+
+8
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+akan memilihnya jika memilah menjadi lebih mudah daripada bank sampah dan pembeli
+menerima pasokan yang lebih bersih dan terjadwal. Pilot menguji keduanya.
+
+7. STRATEGI PEMASARAN
+7.1 Positioning dan akuisisi
+ResikPay menawarkan cara sederhana bagi lingkungan warga untuk memperoleh hasil
+dari apa yang selama ini dibuang: Pilih Hari Ini, Masa Depan Lebih Bersih. Tim
+mendekati ketua RW dan kantor kelurahan, menyepakati hari tuan rumah, lalu
+menggelar demonstrasi pemilahan 45 menit di pertemuan rutin. Tindak lanjut lewat grup
+WhatsApp RT/RW, PKK, dan Karang Taruna, dengan relawan mahasiswa sebagai duta.
+Setiap RW baru berbiaya Rp1,2 juta (perlengkapan Rp0,9 juta ditambah acara
+pembukaan Rp0,3 juta), ditambah promosi Rp0,2 sampai 0,4 juta per bulan.
+7.2 Corong akuisisi
+Tabel 8. Target corong (asumsi yang akan diganti data pilot)
+Tahap (kumulatif akhir tahun)
+
+Tahun 1
+
+Tahun 2
+
+RW dihubungi (asumsi 1 dari 3 bergabung)
+
+15
+
+36
+
+60 Catatan penjangkauan
+
+RW berminat (60% dari yang dihubungi)
+
+9
+
+22
+
+36 Formulir tuan rumah bertanda
+tangan
+
+RW bergabung
+
+Tahun 3 Cara mengukur
+
+5
+
+12
+
+2.250
+
+5.400
+
+9.000 Daftar rumah tangga RW
+
+Rumah tangga teraktivasi (satu setoran atau
+lebih)
+
+431
+
+1.209
+
+2.249 Buku besar
+
+Penyetor berulang (3 kali atau lebih dalam 8
+minggu, 80%)
+
+345
+
+967
+
+1.799 Buku besar
+
+Bertahan: aktif bulanan (penggerak model)
+
+291
+
+816
+
+1.518 Buku besar, bulanan
+
+Rumah tangga sasaran
+
+20 Hari setor pertama terlaksana
+
+Rasio corong adalah asumsi. Lima belas RW tambahan dalam 24 bulan berarti sekitar 2 sampai 3 kontak
+RW per bulan, yang bisa dijalankan tiga pendiri di sela kuliah; koordinator lapangan bergabung per 8
+RW aktif. Biaya akuisisi sekitar Rp16.097 per rumah tangga teraktivasi pada Tahun 3 (promosi,
+perlengkapan, dan acara pembukaan).
+
+7.3 Retensi
+Hadiah sekitar Rp37 ribu setahun tidak akan menahan retensi sendirian, dan kami tidak
+mengandaikannya. Rencana bertumpu pada empat tuas: hari setor mingguan tetap di pos
+terdekat (kemudahan); papan dana RW yang terbuka dan papan peringkat bulanan
+(komunitas); laporan bulanan berisi kilogram dan poin (transparansi); dan pembayaran
+setiap kali saldo mencapai Rp25.000 (keandalan). Targetnya dua pertiga rumah tangga
+teraktivasi masih menyetor pada bulan ke-3 dan 20% rumah tangga sasaran aktif di RW
+yang berusia lebih dari 12 bulan. Jika RW pertama kurang dari target, responsnya adalah
+menaikkan porsi hadiah hanya sampai batas yang diizinkan unit ekonomi (Bagian 9.6).
+7.4 Penjualan institusional
+DLH menerima pilot dasbor gratis dan catatan hasil satu halaman setelah enam bulan.
+Bank Jatim dan produsen didekati dengan data dari RW pilot dan tidak dihitung sebagai
+pendapatan sampai mereka menandatangani. Para pendiri memimpin penjualan.
+
+9
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+8. RENCANA OPERASIONAL
+8.1 Proses operasi
+Setiap RW menggelar hari setor mingguan di pos yang sudah ada. Admin menimbang
+dan memotret setoran, dan ResikPay menyediakan timbangan gantung, tong, dan papan
+penanda (Rp0,9 juta per RW). Pengumpul lokal atau pembeli menjemput bal yang
+tersimpan sesuai jadwal tetap dan membayar ResikPay per kilogram yang diterima
+dalam 30 hari. ResikPay lalu mencairkan poin lewat mitra pembayaran dan
+membukukan porsi dana RW. Pos RW diasumsikan menyediakan tempat penyimpanan
+tanpa biaya, yang harus dikonfirmasi dengan tiap RW (bobot yang ditolak dikembalikan
+ke rumah tangga atau dibuang secara lokal).
+
+Gambar 2. Peta jalan implementasi, gerbang validasi (G0 sampai G3), dan tahap pendanaan
+
+8.2 Sumber daya dan biaya
+Tiga pendiri memimpin produk, operasi lapangan, dan kemitraan di sela studi dan
+menerima stipend gabungan Rp1,5, Rp2,25, dan Rp3,0 juta per bulan pada Tahun 1
+sampai 3. Koordinator paruh waktu (Rp1,2 juta per bulan per orang) baru direkrut ketika
+RW aktif mencapai 8, 16, dan 24, bukan pada tanggal tetap. Biaya platform mencakup
+hosting bersama, notifikasi, inferensi cloud, dan biaya pembayaran. Biaya modal per
+RW adalah Rp0,9 juta untuk perlengkapan dan Rp0,3 juta untuk acara pembukaan, total
+Rp1,2 juta; penggantian perlengkapan menambah 10% per tahun mulai bulan 13.
+8.3 Pengendalian mutu
+Pengendalian mutu menggabungkan penanda AI, audit acak oleh koordinator (5%
+setoran), dan rekonsiliasi bulanan antara bobot yang dicatat RW dan bobot timbangan
+jembatan pembeli, dengan selisih di atas 8% memicu peninjauan RW tersebut. Tingkat
+penolakan oleh pembeli masuk ke skor tiap RW.
+8.4 Pertanyaan hukum dan kepatuhan
+
+10
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Tabel 9. Hal yang perlu dikonfirmasi dengan konsultan hukum Indonesia atau otoritas (tidak ada
+klaim kepatuhan)
+Bidang
+
+Pertanyaan yang harus dijawab
+
+Penanggung jawab dan
+waktu
+
+Data pribadi
+
+Persetujuan, retensi, dan berbagi data agregat dengan DLH
+menurut UU 27/2022 [25]
+
+Konsultan hukum; sebelum
+peluncuran
+
+Pembayaran dan saldo
+
+Apakah menyimpan saldo pada mitra bank atau dompet digital
+membuat ResikPay tetap di luar perizinan uang elektronik dan
+jasa pembayaran
+
+Konsultan hukum dan bank
+mitra; sebelum pembayaran
+(bulan 4 sampai 9)
+
+Bentuk usaha dan
+pendaftaran
+
+Pilihan badan usaha (CV, PT, atau koperasi) dan NIB;
+kewenangan menandatangani MoU
+
+Konsultan hukum; bulan -3
+sampai 0
+
+Penanganan sampah
+
+Apakah mengumpulkan material daur ulang terpilah di pos RW
+membutuhkan izin atau harus lewat bank sampah terdaftar
+
+DLH dan kelurahan; bulan -3
+sampai 0
+
+Pajak
+
+Rezim dan tarif pajak omzet (model memakai alokasi 0,5%)
+
+Konsultan pajak; bulan 0
+
+Pembayaran oleh
+instansi publik
+
+Apakah DLH boleh membayar biaya laporan, dan lewat jalur
+pengadaan apa
+
+DLH; bulan 7 sampai 12
+
+9. KELAYAKAN KEUANGAN
+9.1 Dasar dan definisi
+Model berjalan bulanan selama 36 bulan, sebelum pajak kecuali alokasi pajak omzet
+yang kecil, dan berakhir tanpa nilai terminal. Margin kontribusi adalah pendapatan
+dikurangi biaya variabel untuk melayani satu rumah tangga. Laba kotor adalah
+pendapatan dikurangi hadiah, porsi dana RW, dan angkutan. EBITDA adalah laba kotor
+dikurangi biaya operasi (tim, platform, promosi, administrasi, kontingensi, modul AI,
+dan alokasi pajak), diukur saat penjualan terjadi. Arus kas bersih juga mengurangkan
+perlengkapan RW dan penggantiannya serta mencerminkan jeda pembayaran pembeli
+30 hari, karena hadiah dibayar hanya setelah pembeli membayar. Kebutuhan kas
+kumulatif adalah saldo kas berjalan terendah tanpa pendanaan luar. EBITDA positif
+tidak berarti kas positif, karena perlengkapan, penggantian, dan piutang tetap menyerap
+kas.
+Seluruh masukan tercantum dalam register asumsi di Lampiran D beserta statusnya
+(bersumber, turunan, asumsi, atau target). Masukan yang paling menggerakkan hasil
+adalah volume per rumah tangga (4 kg per bulan, turunan sebesar 41% dari fraksi yang
+layak jual), porsi rumah tangga aktif (20% ketika RW sudah matang), harga campuran
+(Rp2.300 per kg), dan biaya DLH mulai bulan 19.
+9.2 Audit model dan koreksi
+Versi internal pertama model kami diperiksa terhadap angka bulanannya sendiri:
+EBITDA bulanan baru positif mulai bulan 31, dan EBITDA tahunan Tahun 3 sebesar
+-Rp0,9 juta adalah jumlah dari enam bulan negatif dan enam bulan positif. Kebutuhan
+puncak Rp102,2 juta terjadi pada bulan 33, sedangkan defisit akhir Tahun 3 sebesar
+Rp101,2 juta adalah posisi bulan 36, sehingga kedua angka menggambarkan tanggal
+yang berbeda. Pemeriksaan itu juga menemukan asumsi yang membuat hasil terlalu
+tinggi. Tabel menunjukkan bagaimana tiap koreksi menggeser kebutuhan dana puncak
+36 bulan.
+
+11
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Tabel 10. Pengaruh tiap koreksi terhadap kebutuhan dana puncak 36 bulan
+Kebutuhan
+puncak (Rp
+juta)
+
+Langkah
+
+Perubahan EBITDA positif
+(Rp juta) mulai
+
+Model internal pertama (basis akrual, 5 kg, tanpa penolakan,
+penggantian alat, atau pajak)
+
+102,2
+
+bulan 31
+
+1. Basis kas: pembeli membayar dengan jeda satu bulan
+
+111,4
+
++9,2 bulan 31
+
+2. 5% bobot yang dikumpulkan ditolak pembeli
+
+118,1
+
++6,8 bulan 33
+
+3. Volume per rumah tangga aktif dari 5 kg menjadi 4 kg
+
+141,2
+
++23,1 tidak dalam 36
+bulan
+
+4. Penggantian alat dan alokasi pajak omzet
+
+144,6
+
++3,4 tidak dalam 36
+bulan
+
+5. Pembangunan bertahap: MVP manual dulu, modul AI di
+bulan 7 sampai 9
+
+150,6
+
++6,0 tidak dalam 36
+bulan
+
+6. Koordinator direkrut per 8 RW aktif, bukan menurut
+kalender
+
+122,3
+
+-28,2 tidak dalam 36
+bulan
+
+Langkahnya kumulatif. Kenaikan terbesar berasal dari koreksi volume (5 kg menjadi 4 kg). Perekrutan
+koordinator bersyarat adalah satu-satunya langkah yang menurunkan kebutuhan, dan itu pilihan desain
+yang mengaitkan perekrutan dengan jumlah RW.
+
+9.3 Proyeksi
+Tabel 11. Proyeksi tiga tahun, kasus dasar
+Rp juta
+RW aktif akhir tahun
+Rumah tangga aktif bulanan akhir tahun
+Volume terkumpul (ton) / diterima pembeli (ton)
+Pendapatan: penjualan material
+
+Tahun 1
+
+Tahun 2
+
+Tahun 3
+
+5
+
+12
+
+20
+
+291
+
+816
+
+1.518
+
+7,1 / 6,7
+
+27,0 / 25,6
+
+57,2 / 54,3
+
+15,5
+
+58,9
+
+125,0
+
+Pendapatan: biaya laporan DLH
+
+0,0
+
+9,0
+
+18,0
+
+Total pendapatan
+
+15,5
+
+67,9
+
+143,0
+
+Hadiah, dana RW, dan angkutan
+
+(7,7)
+
+(29,4)
+
+(62,3)
+
+Laba kotor
+
+7,8
+
+38,5
+
+80,7
+
+Biaya operasi (termasuk modul AI, alokasi pajak)
+
+(41,6)
+
+(61,2)
+
+(96,2)
+
+EBITDA
+
+(33,8)
+
+(22,7)
+
+(15,5)
+
+Perlengkapan RW, acara pembukaan, penggantian
+
+(6,0)
+
+(9,2)
+
+(11,1)
+
+Waktu modal kerja (jeda 30 hari)
+
+(1,4)
+
+(2,6)
+
+(3,5)
+
+Arus kas bersih dari operasi
+
+(41,3)
+
+(34,5)
+
+(30,1)
+
+Kas kumulatif tanpa pendanaan, akhir tahun (setelah
+pra-peluncuran Rp16,5 juta)
+
+(57,8)
+
+(92,2)
+
+(122,3)
+
+Pendanaan diterima (tahap)
+
+65,0
+
+35,0
+
+30,0
+
+Kas akhir dengan tahap pendanaan
+
+7,2
+
+7,8
+
+7,7
+
+12
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Gambar 3. Kas kumulatif dengan dan tanpa pendanaan, serta waktu tiap tahap
+
+Gambar 4. Pendapatan dan EBITDA: Tahun 1 sampai 3 rencana dan jalur perpanjangan
+
+Membaca hasilnya. Margin kotor 50% di Tahun 1, 57% di Tahun 2, dan 56% di Tahun
+3, tetapi biaya operasi melebihi laba kotor sepanjang rencana. EBITDA adalah Rp(33,8),
+(22,7), dan (15,5) juta. EBITDA bulanan pertama kali positif pada bulan 46 di jalur
+perpanjangan (30, 40, dan 50 RW pada Tahun 4 sampai 6) dan tetap positif mulai bulan
+52. Kas kumulatif terus turun sampai bulan 64, ketika kebutuhan puncak mencapai
+Rp156,9 juta, dan tidak menjadi positif dalam 72 bulan. Karena itu ResikPay tidak
+mengembalikan modal yang ditanam dalam rencana ini, dan kami tidak mengklaim
+tanggal balik modal. Jalur perpanjangan berada di luar permintaan dana.
+9.4 Permintaan dana, penggunaan dana, dan gerbang tiap tahap
+Tabel 12. Penggunaan kas selama 36 bulan
+Penggunaan kas, bulan 1 sampai 36
+
+Rp juta
+
+Porsi
+
+Pra-peluncuran: MVP manual, legal, merek, survei
+
+16,5
+
+7%
+
+Modul AI (bulan 7 sampai 9)
+
+8,0
+
+3%
+
+Perlengkapan RW, acara pembukaan, penggantian
+
+26,2
+
+11%
+
+Stipend pendiri
+
+81,0
+
+34%
+
+Koordinator lapangan
+
+31,2
+
+13%
+
+Biaya operasi platform
+
+44,0
+
+18%
+
+Promosi dan administrasi
+
+21,2
+
+9%
+
+Kontingensi (7%) dan alokasi pajak
+
+13,6
+
+6%
+
+Total pengeluaran
+
+241,7
+
+100%
+
+Dikurangi laba kotor
+
+(127,0)
+
+Ditambah waktu modal kerja (piutang bulan 36)
+
+7,6
+
+13
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Penggunaan kas, bulan 1 sampai 36
+
+Rp juta
+
+Kebutuhan dana puncak sampai bulan 36
+
+Porsi
+
+122,3
+
+Tabel 13. Tahap pendanaan dan gerbangnya
+Tahap
+
+Pencairan
+
+Rp juta Menutup
+
+Gerbang pencairan
+
+Kas terendah
+pada periode
+(Rp juta)
+
+1
+
+Bulan 0
+
+65 Pra-peluncuran
+dan Tahun 1
+
+G0: H1 sampai H3 terpenuhi (survei, kesediaan
+tuan rumah, LOI pembeli)
+
+7,2
+
+2
+
+Bulan 13
+
+35 Tahun 2
+
+G1: 16% aktif di RW berusia lebih dari 6 bulan;
+kg per rumah tangga 3,5 atau lebih; pembeli
+membayar dalam 30 hari; pembayaran
+terekonsiliasi (H5)
+
+7,8
+
+3
+
+Bulan 25
+
+30 Tahun 3
+
+G2: 20% aktif di RW berusia lebih dari 12
+bulan; kontribusi per RW matang Rp250.000
+atau lebih selama 3 bulan; jalur pembayaran
+DLH terkonfirmasi atau diganti
+
+7,7
+
+Permintaan Rp130 juta sama dengan kebutuhan puncak ditambah cadangan paling sedikit Rp7 juta
+(sekitar satu bulan pengeluaran operasi) pada tiap titik terendah. G3 (bulan 36) menentukan apakah akan
+mencari tambahan dana Rp27 juta yang dibutuhkan jalur perpanjangan. Jika sebuah gerbang tidak
+tercapai, tahap berikutnya ditahan dan tim menjalankan keputusan di Bagian 5.4. Sumber yang dibidik:
+pendanaan kewirausahaan universitas, hadiah lomba, program CSR bank daerah, dan kontribusi angel
+kecil; belum ada yang terjamin.
+
+9.5 Sensitivitas, penggerak, dan tindakan korektif
+Tabel 14. Sensitivitas yang dihitung ulang (satu perubahan sekali, kecuali dinyatakan lain)
+Skenario
+
+Kebutuhan
+puncak sampai
+bulan 36 (Rp juta)
+
+Dibanding EBITDA positif
+permintaan Rp130 mulai (jalur
+juta perpanjangan)
+
+Kasus dasar
+
+122,3
+
+sisa 7,7 bulan 52
+
+Harga jual turun 10%
+
+132,8
+
+kurang 2,8 bulan 72
+
+Harga jual turun 15%
+
+138,1
+
+kurang 8,1 setelah bulan 72
+
+Partisipasi turun 15%
+
+132,4
+
+kurang 2,4 bulan 72
+
+Partisipasi turun 25%
+
+139,1
+
+kurang 9,1 setelah bulan 72
+
+Volume per rumah tangga turun 20% (3,2 kg)
+
+140,6
+
+kurang 10,6 setelah bulan 72
+
+Biaya DLH mulai 12 bulan lebih lambat
+
+140,3
+
+kurang 10,3 bulan 52
+
+Biaya DLH tidak pernah terwujud
+
+149,2
+
+kurang 19,2 bulan 64
+
+Biaya angkut naik 50% (Rp225/kg)
+
+129,2
+
+Biaya angkut naik 100% (Rp300/kg)
+
+136,0
+
+kurang 6,0 setelah bulan 72
+
+Skenario buruk gabungan*
+
+165,0
+
+kurang 35,0 setelah bulan 72
+
+Skenario buruk gabungan, stipend dipotong
+separuh, porsi hadiah 30%
+
+114,6
+
+sisa 15,4 bulan 71
+
+Onboarding lebih lambat (70% RW rencana)
+
+115,2
+
+sisa 14,8 bulan 59
+
+Upside: 5 kg per rumah tangga (asumsi awal)
+
+99,5
+
+sisa 30,5 bulan 33
+
+Upside: partisipasi naik 25%
+
+105,6
+
+sisa 24,4 bulan 35
+
+sisa 0,8 bulan 62
+
+*Harga turun 10%, partisipasi turun 15%, biaya angkut naik 50%, dan biaya DLH tertunda 12 bulan.
+Semua hitungan memakai model basis kas yang sudah dikoreksi. Titik impas di jalur perpanjangan
+mengasumsikan 30, 40, dan 50 RW pada Tahun 4 sampai 6.
+
+14
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Gambar 5. Pengaruh satu perubahan buruk terhadap kebutuhan dana puncak 36 bulan
+
+Variabel yang paling berpengaruh. Pendapatan per RW matang (volume per rumah
+tangga, partisipasi, dan harga) menentukan apakah model pernah mencapai titik impas:
+pemotongan volume 20%, partisipasi 25%, atau harga 15% masing-masing menggeser
+titik impas melewati bulan 72. Biaya DLH paling berpengaruh pada kas awal:
+ketiadaannya menambah Rp26,9 juta pada kebutuhan 36 bulan. Biaya angkut adalah
+penggerak paling lemah. Satu perubahan buruk mendorong kebutuhan di atas
+permintaan Rp130 juta pada 8 dari sembilan kasus perubahan tunggal, dan skenario
+buruk gabungan membutuhkan Rp165,0 juta.
+Tindakan korektif. Perekrutan sudah bersyarat. Memotong stipend pendiri separuh saja
+menurunkan kebutuhan kasus dasar sebesar Rp43,3 juta. Porsi hadiah 30%
+menurunkannya Rp9,3 juta tetapi berisiko menurunkan partisipasi. Memperlambat
+onboarding menjadi 70% dari rencana menurunkan kebutuhan 36 bulan menjadi
+Rp115,2 juta tetapi menunda titik impas ke bulan 59. Menggabungkan pemotongan
+stipend dengan porsi hadiah 30% membawa skenario buruk gabungan ke Rp114,6 juta,
+di dalam permintaan. Tindakan lain adalah pembeli kedua dan ketiga untuk menjaga
+harga, serta pencairan tahap berdasarkan capaian sehingga belanja berhenti ketika
+sebuah gerbang gagal. Kami tidak menyesuaikan asumsi apa pun agar rencana tampak
+menguntungkan.
+
+10. DAMPAK KEBERLANJUTAN
+Dampak dihitung pada satu titik saja dalam rantai untuk menghindari penghitungan
+ganda. Sebuah kilogram pertama-tama terkumpul (ditimbang di RW), lalu diterima
+(ditimbang dan dibayar pembeli), dan baru kemudian layak diklaim terdaur ulang
+terverifikasi, yang mengharuskan pembeli mengonfirmasi ke mana material pergi.
+Rencana ini melaporkan ton terkumpul dan diterima. Klaim ton terdaur ulang tidak
+dibuat sebelum pembeli memberi konfirmasi tersebut. Hadiah dan dana RW dihitung
+hanya dari bobot yang diterima.
+Tabel 15. Kerangka pengukuran dampak
+Indikator
+
+Tahun 1
+
+Tahun 2
+
+Sampah terkumpul (ton)
+
+7,1
+
+27,0
+
+57,2 Angka timbangan RW dan foto
+
+Diterima pembeli (ton)
+
+6,7
+
+25,6
+
+54,3 Timbangan jembatan dan faktur
+pembeli
+
+tidak
+diklaim
+
+tidak
+diklaim
+
+tidak Konfirmasi tujuan dari pembeli (masa
+diklaim depan)
+
+5,4
+
+20,6
+
+Terdaur ulang terverifikasi (ton)
+Hadiah dibayarkan ke rumah tangga
+(Rp juta)
+
+15
+
+Tahun 3 Bukti
+
+43,7 Laporan mitra pembayaran
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Indikator
+
+Tahun 1
+
+Tahun 2
+
+Tahun 3 Bukti
+
+Kontribusi dana RW (Rp juta)
+
+1,2
+
+4,7
+
+10,0 Buku besar; RW mengumumkan
+pemakaian
+
+Rumah tangga aktif bulanan yang
+bertahan
+
+291
+
+816
+
+1.518 Buku besar
+
+Peran operasional berbayar
+(koordinator)
+
+0
+
+1
+
+2 Catatan penggajian
+
+Admin RW penerima porsi dana
+
+5
+
+12
+
+20 Buku besar
+
+Lingkungan. Material berpindah dari pembuangan ke daur ulang hanya sejauh pembeli
+menerimanya. Kami akan memperkirakan penghindaran emisi gas rumah kaca dengan
+metode WARM milik US EPA setelah data per jenis material tersedia, dan tidak
+menerbitkan angka CO2 sebelum itu. Sosial. Rumah tangga memperoleh sekitar Rp37
+ribu setahun, dana RW menerima Rp10,0 juta pada Tahun 3, dan pengumpul tetap
+berada dalam rantai sebagai mitra logistik. Stipend pendiri tidak dihitung sebagai
+lapangan kerja. Ekonomi. Dalam tiga tahun Rp69,8 juta mengalir ke rumah tangga dan
+Rp16,0 juta ke dana RW. DLH memperoleh ukuran pengalihan sampah di tingkat
+setoran yang belum dimilikinya pada sumber yang kami tinjau. Model ini mendukung
+SDG 8, 11, 12, 13, dan 17.
+
+11. ANALISIS RISIKO DAN MITIGASI
+Tabel 16. Risiko utama (K kemungkinan, D dampak; T tinggi, S sedang, R rendah)
+Risiko
+
+K
+
+D
+
+Mitigasi dan pemicu
+
+Volume per rumah tangga di bawah T
+rencana
+
+T
+
+Ukur kg di pilot; di bawah 3,5 kg pada G1 menghentikan tahap 2
+(pemotongan 20% menambah kebutuhan Rp18 juta)
+
+Partisipasi rendah atau berhenti
+
+S
+
+T
+
+Kemudahan, papan dana RW, papan peringkat, laporan bulanan;
+gerbang pada 16% dan 20% aktif
+
+Hadiah terlalu kecil untuk
+memotivasi
+
+S
+
+T
+
+Uji hadiah minimum yang diterima (H4); manfaat non-tunai; kolam
+sponsor hanya sebagai upside
+
+Harga pendaur ulang turun atau
+pembeli telat bayar
+
+S
+
+T
+
+Dua pembeli atau lebih, harga dasar di LOI, poin dicairkan hanya
+setelah pembayaran
+
+DLH tidak membayar
+
+T
+
+S
+
+Pilot gratis dulu; kasus dasar sudah menunjukkan biayanya; dasbor
+bersponsor sebagai cadangan
+
+Celah dana pada skenario buruk
+gabungan
+
+S
+
+T
+
+Stipend dipotong separuh, porsi hadiah 30%, tahap bergerbang;
+hentikan onboarding jika gerbang gagal
+
+Kecurangan atau kolusi (duplikat,
+bobot digelembungkan)
+
+S
+
+S
+
+Foto timbangan, hashing, audit 5%, rekonsiliasi bobot pembeli dengan
+pemicu selisih 8%
+
+Kesalahan AI pada muatan rumah
+tangga campuran
+
+S
+
+S
+
+Konfirmasi manusia, metrik per kelas, tunda belanja AI jika H7 gagal
+
+Kapasitas pendiri di sela kuliah
+penuh waktu
+
+S
+
+S
+
+Koordinator bersyarat, admin RW menjalankan pekerjaan harian,
+mentor ITS
+
+Hukum: pembayaran, data,
+penanganan sampah
+
+S
+
+T
+
+Pertanyaan konsultan di Bagian 8.4 dijawab sebelum fase terkait
+
+Pesaing meniru model
+
+S
+
+R
+
+Kecepatan di tingkat RW, dataset lokal, buku besar terverifikasi;
+pesaing juga bisa menjadi mitra
+
+16
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+12. KESIMPULAN
+Bank sampah Surabaya hanya mengurangi 1 sampai 2 ton dari sekitar 1.300 sampai
+1.800 ton sampah harian kota [4][6], dan memilah masih merepotkan, imbalannya tipis,
+dan tidak terverifikasi. ResikPay mengatasinya di dalam RW dengan verifikasi
+berbantuan AI, hadiah yang dicairkan setelah pembeli membayar, dan satu buku besar
+yang dapat diperiksa warga, pembeli, dan DLH. Kasus dasar yang sudah diaudit
+mencapai 20 RW dan 1.518 rumah tangga aktif bulanan, mengumpulkan 91 ton dalam
+tiga tahun, dan membutuhkan Rp122,3 juta pada puncaknya. Kami meminta Rp130 juta
+dalam tiga tahap bergerbang. Titik impas bergantung pada sekitar 24 RW matang,
+sehingga data pilot tahun pertama lebih penting daripada proyeksi mana pun di sini.
+Rencana ini menyatakan batasnya: tidak ada balik modal dalam horizon, tambahan Rp27
+juta pada jalur perpanjangan, dan beberapa asumsi yang belum divalidasi,
+masing-masing dengan pengujian dan aturan keputusan.
+
+17
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+REFERENSI
+[1] Kementerian Lingkungan Hidup dan Kehutanan (KLH). SIPSN: Sistem Informasi Pengelolaan
+Sampah Nasional. https://sipsn.menlhk.go.id (angka 36,9 juta ton dan 32,3% terkelola diambil
+dari canvas pendahuluan tim; perlu dikonfirmasi ulang di situs aktif).
+[2] ANTARA (2025). Menteri LH sebut sisa makanan masih jadi jenis timbulan sampah terbesar
+(komposisi SIPSN 2024; total bervariasi antar-snapshot).
+https://megapolitan.antaranews.com/berita/373321
+[3] Goodstats. 39% sampah Indonesia adalah sisa makanan (komposisi SIPSN 2024: logam 3,43%,
+kaca 2,37%; sumber sekunder).
+https://data.goodstats.id/statistic/39-sampah-indonesia-adalah-sisa-makanan-r1vK4
+[4] Suara Surabaya (31 Agustus 2023). DLH Surabaya terbuka untuk diskusi dengan mahasiswa
+terkait pengelolaan sampah (bank sampah mengurangi 1 sampai 2 ton per hari).
+https://www.suarasurabaya.net/?p=668803
+[5] Suara Surabaya (2023). Kolaborasi bank sampah di Surabaya ditarget kurangi sampah plastik 5
+ton sehari (lebih dari 600 bank sampah; rencana Bank Sampah Induk).
+https://www.suarasurabaya.net/?p=654580
+[6] Suara Surabaya (15 November 2024). Produksi sampah di Surabaya mencapai 1.800 ton per hari
+(0,6 kg per orang secara teoretis; Benowo 1.300 sampai 1.500 ton/hari).
+https://www.suarasurabaya.net/kelanakota/2024/produksi-sampah-di-surabaya[7] ANTARA Jatim (2024). Pansus LKPj: pengelolaan sampah di Surabaya belum maksimal
+(Benowo sekitar 1.500 ton/hari; biaya tipping Rp136 miliar pada 2023).
+https://jatim.antaranews.com/berita/781404
+[8] TIMES Indonesia. Pemkot Surabaya siap berkolaborasi dengan Yayasan VEL (pernyataan
+bahwa 60% sampah berasal dari rumah tangga; sumber sekunder).
+https://timesindonesia.co.id/peristiwa-daerah/475102
+[9] Jawa Pos (Maret 2024). Jumlah penduduk Kota Surabaya terus meningkat (3.009.286 jiwa).
+[10] Pemerintah Kota Surabaya. Data Statistik 2016, Bab 2: Pemerintahan (1.359 RW; sudah usang,
+perlu diperbarui).
+[11] Mongabay Indonesia (9 April 2018). Cukup bawa sampah plastik, Suroboyo Bus siap antar
+Anda keliling kota.
+[12] Suara Surabaya (16 Juli 2018). Dishub Surabaya sebut penumpang Suroboyo Bus semakin
+bertambah (sekitar 12 ton plastik).
+[13] Peraturan Menteri Lingkungan Hidup dan Kehutanan No.
+P.75/MENLHK/SETJEN/KUM.1/10/2019 tentang Peta Jalan Pengurangan Sampah oleh
+Produsen.
+[14] Infobanknews (20 April 2026). Bank Jatim bidik 2 juta pengguna JConnect hingga akhir 2026.
+[15] Warta Ekonomi (30 Maret 2026). Bank Jatim percepat digitalisasi, JConnect tembus 993 ribu
+user.
+[16] Kompas.com (15 Juni 2023). Kita Olah banderol sampah plastik hingga Rp 10.000 per
+kilogram.
+[17] Repositori Politeknik Kesehatan Yogyakarta. Studi dua bank sampah, April 2025 sampai April
+2026 (daftar harga). https://eprints.poltekkesjogja.ac.id/23841
+[18] Focus-RCNet: a lightweight recyclable waste classification algorithm based on focus and
+knowledge distillation. PubMed Central, PMC10567611.
+[19] Waste classification and identification by transfer learning and lightweight neural network.
+Preprints.org, 2020. https://www.preprints.org/manuscript/202002.0327
+[20] ANTARA Jatim. Mengintip peran Bank Sampah Induk Surabaya.
+https://jatim.antaranews.com/berita/1064412
+[21] Blog Google Indonesia (Mei 2019). Yayasan Gringgo Indonesia terpilih dalam Google AI
+Impact Challenge.
+
+18
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+[22] Bisnis.com (16 Oktober 2022). Pandu Sjahrir pimpin pendanaan Seri A startup pengelola
+sampah Waste4Change.
+[23] Kompas.com (8 Juli 2025). Waste Station dan Single Stream Recycling, strategi Rekosistem
+ajak anak muda.
+[24] Bisnis.com (22 Desember 2021). Kelebihan BI-Fast: biaya transfer antarbank Rp2.500 (biaya
+ke nasabah dibatasi Rp2.500). https://finansial.bisnis.com/read/20211222/90/1480423
+[25] Republik Indonesia. Undang-Undang No. 27 Tahun 2022 tentang Pelindungan Data Pribadi.
+
+19
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+LAMPIRAN A. GARIS BESAR SURVEI RUMAH TANGGA
+PRA-PILOT
+Sampel: paling sedikit 150 rumah tangga di 5 RW calon, campuran kampung dan perumahan
+klaster. Butir berupa pertanyaan tertutup kecuali dinyatakan lain. Niat yang dinyatakan dicatat
+terpisah dari setoran yang teramati (Lampiran B, E2).
+•
+•
+•
+•
+•
+•
+•
+
+Jumlah anggota rumah tangga, kantong sampah per minggu, dan apa yang dipilah
+saat ini.
+Pemakaian bank sampah atau pengumpul, dan alasan tidak memakainya (daftar
+terbuka).
+Kemampuan menyebut barang yang dibeli pendaur ulang (kuis gambar 10 barang).
+Kesediaan menyetor sampah kering tiap minggu di pos RW (skala 5 poin).
+Hadiah bulanan minimum yang membuat setor mingguan sepadan (tangga harga dari
+Rp1.000 sampai Rp15.000).
+Kanal hadiah yang disukai: rekening bank, dompet digital, dana RW, atau barang;
+kepemilikan ponsel pintar dan rekening bank.
+Kepercayaan pada admin RW sebagai pemverifikasi; hari dan jam setor yang
+disukai.
+
+LAMPIRAN B. PROTOKOL VALIDASI
+Setiap eksperimen memuat tujuh unsur yang dibutuhkan untuk menilai hasilnya. Semuanya
+adalah rencana: belum ada yang dilaksanakan.
+Tabel 17. E1 Survei rumah tangga (H1, niat yang dinyatakan)
+Unsur
+
+Rincian
+
+Hipotesis
+
+Paling sedikit 40% rumah tangga menyatakan akan menyetor sampah kering tiap minggu di pos RW.
+
+Metode
+
+Survei tatap muka dengan instrumen di Lampiran A, dijalankan lewat ketua RW.
+
+Sampel
+
+150 rumah tangga di 5 RW calon (30 per RW), kuota kampung dan perumahan klaster.
+
+Ambang batas
+
+40% atau lebih menjawab 4 atau 5 pada skala kesediaan; tingkat pengenalan pada kuis gambar
+dicatat sebagai baseline.
+
+Pengukuran
+
+Proporsi responden; interval kepercayaan 95% dilaporkan; niat yang dinyatakan tidak pernah dipakai
+sebagai partisipasi.
+
+Jadwal
+
+Bulan -3 sampai -2.
+
+Jika tidak tercapai
+
+Rancang ulang tawaran setor dan hadiah sebelum RW mana pun dimasuki; ulangi di 3 RW.
+
+Tabel 18. E2 Hari setor manual (H1, partisipasi teramati)
+Unsur
+
+Rincian
+
+Hipotesis
+
+Paling sedikit 15% rumah tangga sasaran menyetor dalam 4 minggu ketika hari setor mingguan
+ditawarkan.
+
+Metode
+
+Dua hari setor manual per RW dengan lembar timbang kertas dan foto; tanpa aplikasi.
+
+Sampel
+
+5 RW, sekitar 2.250 rumah tangga sasaran.
+
+Ambang batas
+
+15% atau lebih menyetor paling sedikit sekali dalam 4 minggu; kilogram per rumah tangga penyetor
+dicatat.
+
+Pengukuran
+
+Jumlah rumah tangga penyetor unik, bobot dari foto timbangan.
+
+Jadwal
+
+Bulan -1 sampai 1.
+
+Jika tidak tercapai
+
+Jangan tambah RW; uji hari, lokasi, atau insentif yang berbeda.
+
+20
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Tabel 19. E3 Wawancara RW dan kelurahan (H2)
+Unsur
+
+Rincian
+
+Hipotesis
+
+Ketua RW bersedia menjadi tuan rumah dan admin dapat memverifikasi satu setoran dalam 30 detik
+atau kurang.
+
+Metode
+
+Wawancara terstruktur, lalu uji coba alur kerja admin dengan pencatat waktu.
+
+Sampel
+
+10 ketua RT/RW dan 3 kantor kelurahan; 30 setoran yang diukur waktunya.
+
+Ambang batas
+
+70% ketua setuju menjadi tuan rumah; median verifikasi paling lama 30 detik.
+
+Pengukuran
+
+Formulir tuan rumah bertanda tangan; catatan stopwatch.
+
+Jadwal
+
+Bulan -3 sampai 1.
+
+Jika tidak tercapai
+
+Ganti model tuan rumah (kantor kelurahan, PKK) atau sederhanakan alur kerja.
+
+Tabel 20. E4 Penjajakan harga pendaur ulang dan LOI (H3)
+Unsur
+
+Rincian
+
+Hipotesis
+
+Pembeli membayar paling sedikit Rp2.000 per kg campuran untuk bal terpilah yang ditimbang,
+dengan penjemputan mingguan.
+
+Metode
+
+Penawaran harga tertulis per kelas dan mutu; surat minat dengan harga dasar dan aturan penolakan.
+
+Sampel
+
+Paling sedikit 4 pembeli dihubungi (Bank Sampah Induk, pengepul); 2 LOI.
+
+Ambang batas
+
+2 LOI dengan harga dasar campuran Rp2.000 per kg atau lebih dan tingkat penolakan yang
+dinyatakan paling tinggi 8%.
+
+Pengukuran
+
+Penawaran dibandingkan dengan harga model Rp2.300 per kg; tiga bal pertama direkonsiliasi.
+
+Jadwal
+
+Bulan -3 sampai 1, diulang tiap kuartal.
+
+Jika tidak tercapai
+
+Turunkan harga dasar atau porsi hadiah; tambah pembeli; tunda onboarding RW.
+
+Tabel 21. E5 Kesediaan menerima hadiah (H4)
+Unsur
+
+Rincian
+
+Hipotesis
+
+Median hadiah bulanan minimum yang diterima paling tinggi Rp4.000.
+
+Metode
+
+Pertanyaan tangga harga di survei, lalu uji A/B dua porsi hadiah di dua RW.
+
+Sampel
+
+Sampel E1 ditambah 2 RW pilot untuk uji A/B.
+
+Ambang batas
+
+Median paling tinggi Rp4.000; porsi hadiah 20% lebih tinggi menaikkan partisipasi 3 poin atau lebih.
+
+Pengukuran
+
+Median jawaban tangga; selisih porsi aktif setelah 8 minggu.
+
+Jadwal
+
+Bulan -3 sampai 2 dan bulan 7 sampai 9.
+
+Jika tidak tercapai
+
+Tambah manfaat non-tunai atau naikkan porsi hadiah hanya dalam batas Bagian 9.6.
+
+Tabel 22. E6 Rekonsiliasi pembayaran (H5)
+Unsur
+
+Rincian
+
+Hipotesis
+
+Poin dikonversi menjadi pembayaran bank atau dompet digital tanpa perbaikan manual.
+
+Metode
+
+Pembayaran pilot lewat rekening mitra; rekonsiliasi buku besar, pembayaran pembeli, dan rekening
+koran mitra.
+
+Sampel
+
+100 rumah tangga pertama selama 2 siklus pembayaran.
+
+Ambang batas
+
+Nol selisih tak terjelaskan; pembayaran dalam 7 hari sejak pembeli membayar.
+
+Pengukuran
+
+Rekonsiliasi tiga arah tiap siklus.
+
+Jadwal
+
+Bulan 4 sampai 9.
+
+Jika tidak tercapai
+
+Hentikan pembayaran dan perbaiki buku besar; pertimbangkan mitra pembayaran lain.
+
+21
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Tabel 23. E7 Dasbor DLH dan kesediaan membayar (H6)
+Unsur
+
+Rincian
+
+Hipotesis
+
+DLH menilai dasbor berguna dan memiliki jalur pembayaran Rp1,5 juta per bulan atau lebih.
+
+Metode
+
+Pilot gratis enam bulan dengan rapat tinjauan bulanan; log penggunaan; umpan balik tertulis.
+
+Sampel
+
+DLH Surabaya dan 1 sampai 2 kantor kelurahan.
+
+Ambang batas
+
+Niat tertulis Rp1,5 juta per bulan atau lebih dan pos anggaran atau jalur pengadaan yang disebutkan.
+
+Pengukuran
+
+Login, unduhan laporan, catatan rapat, surat tertulis.
+
+Jadwal
+
+Bulan 7 sampai 18; keputusan pada bulan 18.
+
+Jika tidak tercapai
+
+Keluarkan pendapatan DLH dari rencana (menambah kebutuhan Rp27 juta) dan cari sponsor.
+
+Tabel 24. E8 Uji AI pada data lokal (H7)
+Unsur
+
+Rincian
+
+Hipotesis
+
+Verifikasi dibantu AI menjaga akurasi 85% atau lebih pada bulan 9 (90% pada bulan 18) dan
+memangkas waktu verifikasi di bawah cara manual.
+
+Metode
+
+Kumpulkan dan labeli foto lokal; pembagian berbasis kelompok menurut rumah tangga dan hari
+setor; perbandingan berpasangan dengan verifikasi manual.
+
+Sampel
+
+Paling sedikit 3.000 foto berlabel untuk latih dan validasi; set uji tertahan paling sedikit 500 foto dari
+kejadian setoran terpisah.
+
+Ambang batas
+
+F1 per kelas dilaporkan; akurasi 85% atau lebih (bulan 9); koreksi paling tinggi 20%; verifikasi
+paling lama 30 detik; inferensi paling lama 1,5 detik.
+
+Pengukuran
+
+Matriks konfusi pada set uji; catatan stopwatch; tingkat koreksi di buku besar.
+
+Jadwal
+
+Bulan 4 sampai 18.
+
+Jika tidak tercapai
+
+Pertahankan alur manual; hentikan belanja AI; tinjau ulang desain kelas.
+
+LAMPIRAN C. JADWAL ARUS KAS BULANAN (KASUS DASAR,
+DENGAN TIGA TAHAP PENDANAAN)
+Tabel 25. Jadwal kas bulanan, Rp juta (kas akhir terendah Rp7,2 juta pada bulan 12)
+Bulan
+
+RW
+aktif
+
+RT aktif
+
+0
+
+Kas awal Penerima Pembayaran
+an
+hadiah dan
+angkutan
+0,0
+
+Biaya
+operasi
+dibayar
+
+Belanja
+modal
+
+(16,5)
+
+Pendan
+aan
+
+Kas akhir
+
+65,0
+
+48,5
+
+1
+
+0,7
+
+15
+
+48,5
+
+0,0
+
+-0,0
+
+(2,6)
+
+(0,8)
+
+45,1
+
+2
+
+1,3
+
+30
+
+45,1
+
+0,1
+
+(0,1)
+
+(2,6)
+
+(0,8)
+
+41,7
+
+3
+
+2,0
+
+60
+
+41,7
+
+0,3
+
+(0,1)
+
+(2,7)
+
+(0,8)
+
+38,4
+
+4
+
+2,3
+
+82
+
+38,4
+
+0,5
+
+(0,3)
+
+(2,7)
+
+(0,4)
+
+35,5
+
+5
+
+2,7
+
+105
+
+35,5
+
+0,7
+
+(0,4)
+
+(2,7)
+
+(0,4)
+
+32,7
+
+6
+
+3,0
+
+120
+
+32,7
+
+0,9
+
+(0,5)
+
+(2,7)
+
+(0,4)
+
+30,0
+
+7
+
+3,3
+
+153
+
+30,0
+
+1,0
+
+(0,5)
+
+(5,5)
+
+(0,4)
+
+24,7
+
+8
+
+3,7
+
+186
+
+24,7
+
+1,3
+
+(0,7)
+
+(5,5)
+
+(0,4)
+
+19,4
+
+9
+
+4,0
+
+219
+
+19,4
+
+1,6
+
+(0,8)
+
+(5,5)
+
+(0,4)
+
+14,3
+
+10
+
+4,3
+
+243
+
+14,3
+
+1,9
+
+(1,0)
+
+(2,9)
+
+(0,4)
+
+11,9
+
+11
+
+4,7
+
+267
+
+11,9
+
+2,1
+
+(1,1)
+
+(2,9)
+
+(0,4)
+
+9,6
+
+12
+
+5,0
+
+291
+
+9,6
+
+2,3
+
+(1,2)
+
+(3,2)
+
+(0,4)
+
+7,2
+
+13
+
+5,5
+
+331
+
+7,2
+
+2,5
+
+(1,3)
+
+(4,0)
+
+(0,6)
+
+14
+
+6,0
+
+370
+
+38,8
+
+2,9
+
+(1,5)
+
+(4,1)
+
+(0,6)
+
+35,5
+
+15
+
+6,5
+
+414
+
+35,5
+
+3,2
+
+(1,6)
+
+(4,1)
+
+(0,6)
+
+32,3
+
+16
+
+7,0
+
+452
+
+32,3
+
+3,6
+
+(1,8)
+
+(4,2)
+
+(0,7)
+
+29,2
+
+22
+
+35,0
+
+38,8
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Biaya
+operasi
+dibayar
+
+Belanja
+modal
+
+(2,0)
+
+(4,2)
+
+(0,7)
+
+26,3
+
+4,3
+
+(2,2)
+
+(5,6)
+
+(0,7)
+
+22,1
+
+6,1
+
+(2,3)
+
+(5,7)
+
+(0,9)
+
+19,4
+
+19,4
+
+6,5
+
+(2,5)
+
+(5,7)
+
+(0,9)
+
+16,8
+
+668
+
+16,8
+
+6,9
+
+(2,7)
+
+(5,8)
+
+(0,9)
+
+14,3
+
+717
+
+14,3
+
+7,3
+
+(2,9)
+
+(5,8)
+
+(0,9)
+
+12,0
+
+11,3
+
+766
+
+12,0
+
+7,8
+
+(3,2)
+
+(5,9)
+
+(0,9)
+
+9,8
+
+24
+
+12,0
+
+816
+
+9,8
+
+8,2
+
+(3,4)
+
+(6,0)
+
+(0,9)
+
+25
+
+12,7
+
+873
+
+7,8
+
+8,6
+
+(3,6)
+
+(6,9)
+
+(0,9)
+
+26
+
+13,3
+
+930
+
+35,1
+
+9,1
+
+(3,8)
+
+(6,9)
+
+(0,9)
+
+32,5
+
+27
+
+14,0
+
+987
+
+32,5
+
+9,6
+
+(4,1)
+
+(7,0)
+
+(0,9)
+
+30,2
+
+28
+
+14,7
+
+1.044
+
+30,2
+
+10,1
+
+(4,3)
+
+(7,1)
+
+(0,9)
+
+28,0
+
+29
+
+15,3
+
+1.101
+
+28,0
+
+10,6
+
+(4,6)
+
+(7,2)
+
+(0,9)
+
+25,9
+
+30
+
+16,0
+
+1.158
+
+25,9
+
+11,1
+
+(4,8)
+
+(8,5)
+
+(0,9)
+
+22,8
+
+31
+
+16,7
+
+1.218
+
+22,8
+
+11,6
+
+(5,1)
+
+(8,6)
+
+(0,9)
+
+19,8
+
+32
+
+17,3
+
+1.278
+
+19,8
+
+12,1
+
+(5,3)
+
+(8,7)
+
+(0,9)
+
+17,0
+
+33
+
+18,0
+
+1.338
+
+17,0
+
+12,7
+
+(5,6)
+
+(8,7)
+
+(0,9)
+
+14,4
+
+34
+
+18,7
+
+1.398
+
+14,4
+
+13,2
+
+(5,9)
+
+(8,8)
+
+(0,9)
+
+12,0
+
+35
+
+19,3
+
+1.458
+
+12,0
+
+13,7
+
+(6,1)
+
+(8,9)
+
+(0,9)
+
+9,7
+
+36
+
+20,0
+
+1.518
+
+9,7
+
+14,2
+
+(6,4)
+
+(9,0)
+
+(1,0)
+
+7,7
+
+Bulan
+
+Kas awal Penerima Pembayaran
+hadiah dan
+an
+angkutan
+
+RW
+aktif
+
+RT aktif
+
+17
+
+7,5
+
+489
+
+29,2
+
+3,9
+
+18
+
+8,0
+
+526
+
+26,3
+
+19
+
+8,7
+
+572
+
+22,1
+
+20
+
+9,3
+
+618
+
+21
+
+10,0
+
+22
+
+10,7
+
+23
+
+Pendan
+aan
+
+Kas akhir
+
+7,8
+30,0
+
+35,1
+
+RT aktif berarti rumah tangga aktif. Penerimaan adalah penjualan bulan sebelumnya ditambah biaya
+DLH. Pembayaran hadiah adalah hadiah dan porsi dana RW yang dibayar ketika pembeli membayar;
+angkutan dibayar saat terjadi. Biaya operasi mencakup modul AI, kontingensi, dan alokasi pajak omzet.
+Belanja modal adalah perlengkapan RW, acara pembukaan, dan penggantian. Bulan 0 adalah
+pra-peluncuran.
+
+LAMPIRAN D. REGISTER ASUMSI DAN JEJAK PERHITUNGAN
+UKURAN PASAR
+Tabel 26. Register asumsi (status: S bersumber, D turunan, A asumsi, T target)
+Parameter
+
+Nilai
+
+Status
+
+Dasar
+
+RW yang dimasuki akhir Tahun
+1, 2, 3
+
+5 / 12 / 20
+
+T
+
+Sekitar 1,5% dari sekitar 1.360 RW [10];
+laju yang mungkin bagi tim mahasiswa
+paruh waktu
+
+Rumah tangga sasaran per RW
+
+450
+
+A
+
+Rata-rata kota sekitar 630 (3,0 juta
+penduduk [9], 3,5 jiwa per rumah tangga)
+
+Porsi rumah tangga sasaran yang 5% (2 bulan), 10% (sampai
+bulan 6), 16% (sampai 12), 20%
+aktif
+setelahnya
+
+A
+
+Belum ada data lokal; diuji di H1 dan G1
+sampai G2
+
+Kg terkumpul per rumah tangga
+aktif per bulan
+
+4
+
+D/A
+
+41% dari 9,6 kg yang layak jual per rumah
+tangga (Bagian 6.1); 5 kg diuji sebagai
+upside
+
+Porsi bobot terkumpul yang
+diterima
+
+95%
+
+A
+
+Penolakan pembeli karena kelembapan dan
+kontaminasi
+
+Harga campuran; hadiah; dana
+RW
+
+Rp2.300/kg; 35%; 8%
+
+A
+
+Rentang harga [16][17]; dikunci lewat LOI
+
+23
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+Parameter
+
+Nilai
+
+Status
+
+Dasar
+
+Angkutan
+
+Rp150/kg terkumpul
+
+A
+
+Penjemputan motor kecil; diuji pada +50%
+dan +100%
+
+Jeda pembayaran pembeli
+
+30 hari
+
+A
+
+Penjualan diterima sebulan kemudian;
+hadiah dibayar saat diterima
+
+Biaya DLH
+
+Rp1,5 juta/bulan mulai bulan 19
+
+A
+
+Belum ada konfirmasi DLH; diuji tertunda
+dan tidak pernah ada
+
+Stipend pendiri (gabungan)
+
+Rp1,5 / 2,25 / 3,0 juta per bulan
+
+T
+
+Uang transport dan data, bukan gaji
+
+Koordinator
+
+Rp1,2 juta/bulan per orang; satu
+per 8 RW aktif
+
+T
+
+Aturan bersyarat, bukan tanggal tetap
+
+Biaya operasi platform
+
+Rp150.000 + 15.000 per RW +
+300.000 + 1.000 per rumah
+tangga aktif per bulan
+
+A
+
+Sekitar Rp300 dari Rp1.000 adalah biaya
+pembayaran (sampai Rp2.500 per transfer
+[24], satu pembayaran tiap sekitar 8 bulan)
+
+Promosi; administrasi;
+kontingensi
+
+Rp0,2 sampai 0,4 juta; 0,25 juta; A
+7% dari biaya operasi
+
+Perkiraan pendiri
+
+Perlengkapan RW; acara
+pembukaan; penggantian
+
+Rp0,9 / 0,3 juta; 10% per tahun
+
+Penggantian mulai bulan 13
+
+Pra-peluncuran; modul AI
+
+Rp16,5 juta; Rp8 juta pada bulan A
+7 sampai 9
+
+MVP manual dulu; dua penawaran
+pengembang belum ada
+
+Alokasi pajak omzet
+
+0,5% dari pendapatan
+
+Perlu dikonfirmasi konsultan pajak
+
+A
+
+A
+
+Tabel 27. Jejak perhitungan langkah demi langkah (dapat direproduksi)
+Langkah
+
+Nilai
+
+Status
+
+Sumber atau catatan
+
+Penduduk Surabaya
+
+3.009.286
+
+S
+
+Jawa Pos, Maret 2024 [9]
+
+Sampah per orang per hari
+(teoretis)
+
+0,6 kg
+
+S
+
+DLH Surabaya [6][7]
+
+Total sampah teoretis
+
+1.806 ton/hari
+
+D
+
+3.009.286 x 0,6 kg; TPA menerima
+1.300 sampai 1.500 ton/hari [6]
+
+Porsi rumah tangga
+
+60%
+
+S
+(sekunder)
+
+Pernyataan pemkot lewat pers [8];
+dikonfirmasi dengan DLH
+
+Sampah rumah tangga
+
+1.083 ton/hari
+
+D
+
+Total x 60%
+
+Porsi kering menurut bobot
+
+36,4%
+
+S/A
+
+SIPSN 2024 nasional: plastik 19,54,
+kertas 11,09, logam 3,43, kaca 2,37
+[2][3]; diterapkan ke rumah tangga
+Surabaya sebagai asumsi
+
+Porsi kering yang layak jual
+
+70%
+
+A
+
+Mengeluarkan kertas kotor, plastik
+multilapis, dan plastik bernilai rendah
+
+Sampah kering rumah tangga
+yang layak jual
+
+276 ton/hari = 100.836
+ton/tahun
+
+D
+
+Sampah rumah tangga x kering x layak
+jual x 365
+
+Rumah tangga
+
+859.796
+
+D
+
+Penduduk / 3,5 jiwa per rumah tangga
+(asumsi)
+
+Kg layak jual per rumah tangga
+per bulan
+
+9,6 kg
+
+D
+
+Ton harian x 1.000 x 30 / rumah tangga
+
+Pengumpulan rumah tangga aktif
+(model)
+
+4 kg = 41% dari yang layak
+jual
+
+A
+
+Harus diukur di pilot; 5 kg berarti 53%
+
+Nilai SAM
+
+Rp232 miliar
+
+D
+
+100.836 ton x Rp2.300/kg
+
+SOM Tahun 3
+
+57,2 ton terkumpul,
+penjualan Rp125 juta
+
+D
+
+20 RW x 450 rumah tangga x partisipasi
+per RW (model) x 4 kg x 12; 95%
+diterima
+
+TAM (indikatif)
+
+4,7 juta ton
+
+A
+
+36,9 juta ton [1] x 50% rumah tangga
+(asumsi) x 36,4% x 70%
+
+24
+
+YED UI 2026 | Babak Semifinal
+Proposal Rencana Bisnis | ResikPay | Skem Hunter
+
+LAMPIRAN E. GLOSARIUM
+Tabel 28. Istilah dan singkatan
+Istilah
+
+Arti
+
+RT / RW
+
+Rukun Tetangga / Rukun Warga: satuan lingkungan warga (satu RW terdiri dari beberapa
+RT)
+
+DLH
+
+Dinas Lingkungan Hidup: dinas lingkungan hidup kota
+
+Bank sampah / Bank Sampah
+Induk
+
+Skema komunitas yang menimbang dan mengkreditkan sampah terpilah / bank sampah
+induk yang mengumpulkan dari bank sampah lokal
+
+Pengepul
+
+Pengumpul atau pembeli barang bekas lokal
+
+SIPSN
+
+Sistem Informasi Pengelolaan Sampah Nasional (KLH)
+
+P.75/2019
+
+Peraturan menteri yang mewajibkan produsen mengurangi sampah 30% dari timbulan
+pada 2029
+
+RW matang
+
+RW yang dimasuki lebih dari 12 bulan lalu
+
+EBITDA
+
+Laba sebelum bunga, pajak, depresiasi, dan amortisasi
+
+LOI
+
+Surat minat (letter of intent)
+
+Gerbang (G0 sampai G3)
+
+Titik keputusan untuk mencairkan atau menahan tahap pendanaan berikutnya
+
+25
+
+
