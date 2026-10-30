@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?v=2.3">
 </head>
 <body>
 
@@ -83,18 +83,18 @@
         <dl class="hero-facts" aria-label="Pembagian nilai per kilogram">
           <div>
             <dt>Harga jual material</dt>
-            <dd><span data-bind="ue.price"></span><small>/kg</small></dd>
+            <dd><span data-bind="ue.price">Rp 2.300</span><small>/kg</small></dd>
           </div>
           <div>
             <dt>Ke rumah tangga</dt>
-            <dd><span data-bind="ue.rewardPct"></span><small>reward</small></dd>
+            <dd><span data-bind="ue.rewardPct">35%</span><small>reward warga</small></dd>
           </div>
           <div>
             <dt>Ke kas RW</dt>
-            <dd><span data-bind="ue.rwPct"></span><small>dana lingkungan</small></dd>
+            <dd><span data-bind="ue.rwPct">8%</span><small>dana lingkungan</small></dd>
           </div>
         </dl>
-        <p class="source-note"><span class="tag tag-source">Sumber: proposal</span> Angka di atas mengikuti model unit economics proposal ResikPay.</p>
+        <p class="source-note"><span class="tag tag-source">Sumber: proposal</span> Angka di atas mengikuti model unit economics proposal ResikPay (Tabel 4).</p>
       </div>
 
       <div class="hero-visual" aria-label="Pratinjau aplikasi ResikPay untuk rumah tangga, berisi data demo">
@@ -109,8 +109,8 @@
 
           <div class="balance">
             <p class="balance-label">Saldo reward bulan ini</p>
-            <p class="balance-value" id="heroBalance">–</p>
-            <p class="balance-sub"><span id="heroKg">–</span> disetor · <span id="heroRate"></span></p>
+            <p class="balance-value" id="heroBalance">Rp 37.030</p>
+            <p class="balance-sub"><span id="heroKg">46,0 kg</span> disetor · <span id="heroRate">Rp 805/kg</span></p>
           </div>
 
           <div class="mini-chart" id="heroChart" role="img" aria-label="Grafik setoran enam minggu terakhir, data demo"></div>
@@ -122,15 +122,15 @@
           <svg viewBox="0 0 64 64" class="alloc-ring" id="heroRing"></svg>
           <div>
             <p class="float-label">Per kg yang disetor</p>
-            <p class="float-value"><span data-bind="ue.rewardPerKg"></span> ke warga</p>
+            <p class="float-value"><span data-bind="ue.rewardPerKg">Rp 805</span> ke warga</p>
           </div>
         </div>
 
         <div class="float-card float-fund" aria-hidden="true">
           <p class="float-label">Dana lingkungan RW 05</p>
-          <p class="float-value" id="heroFund">–</p>
-          <div class="meter"><span id="heroFundBar"></span></div>
-          <p class="float-foot" id="heroFundFoot"></p>
+          <p class="float-value" id="heroFund">Rp 84.640</p>
+          <div class="meter"><span id="heroFundBar" style="width:28%"></span></div>
+          <p class="float-foot" id="heroFundFoot">28% dari target Rp 300.000 · 30 hari</p>
         </div>
       </div>
     </div>
@@ -152,7 +152,7 @@
             <h3>Rumah Tangga</h3>
             <p>Memilah sampah di rumah, menyetorkannya saat jadwal pengumpulan, lalu menerima insentif sesuai berat dan aturan platform.</p>
           </div>
-          <p class="role-gets"><span>Mendapat</span><strong><span data-bind="ue.rewardPct"></span> nilai material</strong></p>
+          <p class="role-gets"><span>Mendapat</span><strong><span data-bind="ue.rewardPct">35%</span> nilai material</strong></p>
         </li>
         <li class="role-row reveal">
           <div class="role-icon"><svg aria-hidden="true"><use href="#i-users"/></svg></div>
@@ -160,7 +160,7 @@
             <h3>Pengurus RW</h3>
             <p>Memantau partisipasi warga per RT dan melihat dana lingkungan yang terkumpul dari setiap setoran.</p>
           </div>
-          <p class="role-gets"><span>Mendapat</span><strong><span data-bind="ue.rwPct"></span> untuk kas lingkungan</strong></p>
+          <p class="role-gets"><span>Mendapat</span><strong><span data-bind="ue.rwPct">8%</span> untuk kas lingkungan</strong></p>
         </li>
         <li class="role-row reveal">
           <div class="role-icon"><svg aria-hidden="true"><use href="#i-recycle"/></svg></div>
@@ -229,7 +229,10 @@
               <p class="stat-label">Rumah tangga Surabaya dalam cakupan SAM (~Rp232 Miliar/th)</p>
             </div>
           </div>
-          <div class="validate-box" id="marketValidate"></div>
+          <div class="validate-box" id="marketValidate">
+            <span class="tag tag-source">Terverifikasi Proposal</span>
+            <p>Setara <strong>9,6 kg</strong> sampah kering bernilai jual per rumah tangga per bulan (~41% ditangkap target setoran 4 kg/KK/bln).</p>
+          </div>
         </article>
 
         <article class="sim-card reveal" aria-labelledby="simTitle">
@@ -252,12 +255,12 @@
           <div class="sim-inputs">
             <div class="field">
               <label for="simHouseholds">Rumah tangga aktif (KK)</label>
-              <output for="simHouseholds" id="simHouseholdsOut"></output>
+              <output for="simHouseholds" id="simHouseholdsOut">90 KK</output>
               <input type="range" id="simHouseholds" min="10" max="2000" step="10" value="90">
             </div>
             <div class="field">
               <label for="simKg">Setoran per KK per bulan</label>
-              <output for="simKg" id="simKgOut"></output>
+              <output for="simKg" id="simKgOut">4,0 kg / KK</output>
               <input type="range" id="simKg" min="1" max="20" step="0.5" value="4">
             </div>
           </div>
@@ -265,7 +268,7 @@
           <div class="sim-total">
             <div>
               <p>Total Material Terkumpul</p>
-              <p class="sim-total-value" id="simTotalKg"></p>
+              <p class="sim-total-value" id="simTotalKg">360,0 kg / bulan</p>
             </div>
             <div class="sim-impact-badge" id="simImpactBadge">
               <span class="eco-icon">🌱</span>
@@ -276,36 +279,68 @@
             </div>
           </div>
 
-          <ul class="alloc-bars" id="simBars"></ul>
+          <ul class="alloc-bars" id="simBars">
+            <li>
+              <span class="ab-name">Nilai Penjualan Material<small>Rp 2.300/kg ke mitra daur ulang</small></span>
+              <span class="ab-val">Rp 828.000<small>Rp 9,9 juta / tahun</small></span>
+              <span class="ab-track"><span class="ab-fill" style="width:100%;background:#123D2B"></span></span>
+            </li>
+            <li>
+              <span class="ab-name">Reward Rumah Tangga<small>35% · Rp 3.220 per KK/bln</small></span>
+              <span class="ab-val">Rp 289.800<small>Rp 3,5 juta / tahun</small></span>
+              <span class="ab-track"><span class="ab-fill" style="width:35%;background:#1C8457"></span></span>
+            </li>
+            <li>
+              <span class="ab-name">Dana Lingkungan RW<small>8% untuk kas warga</small></span>
+              <span class="ab-val">Rp 66.240<small>Rp 794 rb / tahun</small></span>
+              <span class="ab-track"><span class="ab-fill" style="width:8%;background:#C8E86E"></span></span>
+            </li>
+            <li>
+              <span class="ab-name">Biaya Angkutan & Logistik<small>Rp158/kg ke mitra pembeli</small></span>
+              <span class="ab-val">Rp 56.880<small>Rp 682 rb / tahun</small></span>
+              <span class="ab-track"><span class="ab-fill" style="width:6.9%;background:#C79A33"></span></span>
+            </li>
+            <li>
+              <span class="ab-name">Kontribusi Operasional Bersih<small>Rp878/kg menurut model proposal</small></span>
+              <span class="ab-val">Rp 316.080<small>Rp 3,8 juta / tahun</small></span>
+              <span class="ab-track"><span class="ab-fill" style="width:38.2%;background:#4E7A63"></span></span>
+            </li>
+          </ul>
 
           <div class="sim-highlights" id="simHighlights">
             <div class="highlight-item">
               <span class="hl-label">Reward / Rumah Tangga:</span>
-              <strong class="hl-val" id="hlRewardHh">–</strong>
-              <small class="hl-sub" id="hlRewardHhYear">–</small>
+              <strong class="hl-val" id="hlRewardHh">Rp 3.220 / bln</strong>
+              <small class="hl-sub" id="hlRewardHhYear">Rp 38.640 / th per rumah tangga</small>
             </div>
             <div class="highlight-item">
               <span class="hl-label">Kas Lingkungan RW:</span>
-              <strong class="hl-val" id="hlFundRw">–</strong>
-              <small class="hl-sub" id="hlFundRwEquivalent">–</small>
+              <strong class="hl-val" id="hlFundRw">Rp 66.240 / bln</strong>
+              <small class="hl-sub" id="hlFundRwEquivalent">Rp 794 rb/th · pengadaan tong pilah RT</small>
             </div>
             <div class="highlight-item">
               <span class="hl-label">Margin Kontribusi Platform:</span>
-              <strong class="hl-val" id="hlContrib">–</strong>
+              <strong class="hl-val" id="hlContrib">Rp 316.080 / bln</strong>
               <small class="hl-sub">sebelum biaya tetap</small>
             </div>
           </div>
 
-          <p class="fine" id="simFoot"></p>
+          <p class="fine" id="simFoot">Dihitung berdasarkan model Unit Economics proposal ResikPay (Tabel 4). Hasil tahunan = bulanan × 12.</p>
         </article>
 
         <article class="measured-card reveal" aria-labelledby="measuredTitle">
           <div class="card-head">
             <h3 id="measuredTitle">Proyeksi Capaian Pilot (3 Tahun)</h3>
-            <span class="tag tag-proj" id="measuredTag">Proyeksi Pilot</span>
+            <span class="tag tag-proj" id="measuredTag">Target Pilot 3 Th</span>
           </div>
-          <dl class="measured-list" id="measuredList"></dl>
-          <p class="fine" id="measuredFoot"></p>
+          <dl class="measured-list" id="measuredList">
+            <div><dt>Volume sampah terkumpul</dt><dd class="has-value">91,0 ton</dd></div>
+            <div><dt>Volume diterima pembeli</dt><dd class="has-value">87,0 ton</dd></div>
+            <div><dt>Rumah tangga aktif (Th 3)</dt><dd class="has-value">1.518 KK (20 RW)</dd></div>
+            <div><dt>Dana kas RW disalurkan</dt><dd class="has-value">Rp 16.000.000</dd></div>
+            <div><dt>Reward warga disalurkan</dt><dd class="has-value">Rp 70.000.000</dd></div>
+          </dl>
+          <p class="fine" id="measuredFoot">Berdasarkan target bertahap proposal: 5 RW (Tahun 1) → 12 RW (Tahun 2) → 20 RW (Tahun 3) dari proposal rencana bisnis ResikPay YED UI 2026.</p>
         </article>
       </div>
     </div>
@@ -317,7 +352,7 @@
       <header class="section-head section-head-split">
         <div>
           <p class="kicker">Transparansi per kilogram</p>
-          <h2 id="ueTitle">Ke mana <span data-bind="ue.price"></span> dari setiap kilogram mengalir.</h2>
+          <h2 id="ueTitle">Ke mana <span data-bind="ue.price">Rp 2.300</span> dari setiap kilogram mengalir.</h2>
         </div>
         <p class="lede">Alur pembagian nilai material berdasarkan Tabel 4 (Unit Economics Kasus Dasar) proposal ResikPay: 35% reward warga, 8% kas RW, Rp158/kg angkutan, Rp275/kg platform & pajak omzet, dan Rp878/kg kontribusi operasional.</p>
       </header>
@@ -492,14 +527,31 @@
             <h3>Proyeksi pendapatan 3 tahun</h3>
             <span class="tag tag-proj">Proyeksi</span>
           </div>
-          <div class="revenue-chart" id="revenueChart"></div>
-          <div class="ebitda-row" id="ebitdaRow"></div>
+          <div class="revenue-chart" id="revenueChart">
+            <div class="rev-bar"><span class="rev-amt">Rp 15,5 jt</span><div class="rev-fill" style="height:10.8%"></div><span class="rev-lbl">Tahun 1</span></div>
+            <div class="rev-bar"><span class="rev-amt">Rp 67,9 jt</span><div class="rev-fill" style="height:47.5%"></div><span class="rev-lbl">Tahun 2</span></div>
+            <div class="rev-bar"><span class="rev-amt">Rp 143,0 jt</span><div class="rev-fill" style="height:100%"></div><span class="rev-lbl">Tahun 3</span></div>
+          </div>
+          <div class="ebitda-row" id="ebitdaRow">
+            <span class="lbl">EBITDA</span>
+            <span class="ebitda-cell" tabindex="0">−Rp 33,8 juta<small>proyeksi Th 1</small></span>
+            <span class="ebitda-cell" tabindex="0">−Rp 22,7 juta<small>proyeksi Th 2</small></span>
+            <span class="ebitda-cell" tabindex="0">−Rp 15,5 juta<small>proyeksi Th 3</small></span>
+            <p class="ebitda-note">Pendapatan tumbuh, tetapi biaya operasional masih lebih besar. Model diproyeksikan impas pada bulan ke-52 (~24 RW matang).</p>
+          </div>
         </div>
 
         <div class="streams">
           <h3 class="streams-title">Sumber pendapatan</h3>
-          <ul id="streamList"></ul>
-          <div class="growth" id="growthBox"></div>
+          <ul id="streamList">
+            <li><h4>Margin penjualan material</h4><p>Selisih harga jual material ke mitra pembeli setelah reward rumah tangga dan dana RW, mengikuti unit economics per kg.</p></li>
+            <li><h4>Layanan institusional</h4><p>Pendapatan dari layanan kepada lembaga. Proposal mencatat risiko keterlambatan realisasinya; nilai per stream belum dirinci di materi ini.</p></li>
+          </ul>
+          <div class="growth" id="growthBox">
+            <p class="growth-label">Total pendapatan 3 tahun</p>
+            <p class="growth-val">Rp 226,4 juta</p>
+            <p class="growth-sub">Pertumbuhan rata-rata didorong ekspansi bertahap dari 5 RW ke 20 RW di Surabaya.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -517,14 +569,34 @@
       </header>
 
       <div class="risk-layout">
-        <ol class="assumptions" id="assumptionList"></ol>
+        <ol class="assumptions" id="assumptionList">
+          <li><span class="num">1</span><div><h4>Partisipasi rumah tangga</h4><p>Menentukan volume setoran dan kecepatan adopsi di tiap RW.</p></div></li>
+          <li><span class="num">2</span><div><h4>Volume sampah terkumpul</h4><p>Seluruh pendapatan material, reward, dan dana RW dihitung per kg.</p></div></li>
+          <li><span class="num">3</span><div><h4>Harga jual material</h4><p>Reward 35% dan dana RW 8% mengikuti harga; penurunan harga mengecilkan semua alokasi.</p></div></li>
+          <li><span class="num">4</span><div><h4>Biaya pengumpulan dan angkut</h4><p>Memengaruhi kontribusi per kg setelah biaya variabel.</p></div></li>
+          <li><span class="num">5</span><div><h4>Waktu realisasi pendapatan layanan institusional</h4><p>Keterlambatan menekan arus kas di tahun-tahun awal.</p></div></li>
+        </ol>
         <div class="scenarios">
           <h3 class="scenarios-title">Kebutuhan pendanaan menurut skenario</h3>
-          <div class="scenario-grid" id="scenarioGrid"></div>
+          <div class="scenario-grid" id="scenarioGrid">
+            <div class="card-scenario card-base">
+              <h4>Skenario dasar</h4>
+              <p class="scen-val">Rp 130,0 juta</p>
+              <p class="scen-run">Runway 36 bulan</p>
+              <p class="scen-sub">3 tahap pencairan: Tahap 1 Rp20 juta, Tahap 2 Rp50 juta, Tahap 3 Rp60 juta.</p>
+            </div>
+            <div class="card-scenario card-adverse">
+              <h4>Skenario tertekan</h4>
+              <p class="scen-val">Rp 157,0 juta</p>
+              <p class="scen-run">Runway 48 bulan</p>
+              <p class="scen-sub">Asumsi adopsi lebih lambat dan mitigasi perpanjangan landasan pacu operasional.</p>
+            </div>
+            <div class="scenario-ebitda"><strong>EBITDA negatif di Tahun 1-3 (Tabel 11).</strong> Defisit operasional menyempit dari -Rp33,8 juta (Th 1) ke -Rp15,5 juta (Th 3), menuju titik impas kas di bulan ke-52 (~24 RW matang).</div>
+          </div>
         </div>
       </div>
 
-      <details class="audit" id="auditBox">
+      <details class="audit" id="auditBox" hidden>
         <summary><svg aria-hidden="true"><use href="#i-alert"/></svg>Catatan validasi data <span class="audit-count" id="auditCount"></span></summary>
         <ul id="auditList"></ul>
       </details>
@@ -560,7 +632,13 @@
         <li><a href="#risiko">Risiko</a></li>
       </ul>
     </nav>
-    <div class="footer-contact" id="footerContact"></div>
+    <div class="footer-contact" id="footerContact">
+      <h3>Tim Pengembang</h3>
+      <p><strong>Tim Skem Hunter</strong></p>
+      <p>Institut Teknologi Sepuluh Nopember</p>
+      <p>Surabaya, Indonesia</p>
+      <p class="fine" style="margin-top:0.4rem;color:var(--lime)">YED UI 2026 · Babak Semifinal</p>
+    </div>
   </div>
   <div class="wrap footer-base">
     <p>© <span data-bind="meta.year"></span> ResikPay · Tim Skem Hunter (ITS Surabaya). Angka bisnis bersumber dari proposal rencana bisnis YED UI 2026.</p>
@@ -575,7 +653,7 @@
 
 <noscript><p class="noscript">Aktifkan JavaScript untuk melihat angka, grafik, dan dashboard ResikPay.</p></noscript>
 
-<script src="js/data.js"></script>
-<script src="js/app.js"></script>
+<script src="js/data.js?v=2.3"></script>
+<script src="js/app.js?v=2.3"></script>
 </body>
 </html>
