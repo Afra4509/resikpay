@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ResikPay</title>
+  <meta name="claude:viewport-fit-sides" content="cover">
+  <meta name="description" content="ResikPay menghubungkan pengelolaan sampah rumah tangga dengan insentif ekonomi, dana lingkungan tingkat RW, dan data pengelolaan sampah.">
+  <meta name="theme-color" content="#0E1C15">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Ikon SVG lokal (gaya garis, tanpa dependensi eksternal) -->
+<svg class="sprite" aria-hidden="true" focusable="false">
+  <symbol id="i-logo" viewBox="0 0 32 32"><path d="M16 3c6.6 3.4 10.5 9 10.5 15.2C26.5 24.3 21.8 29 16 29S5.5 24.3 5.5 18.2C5.5 12 9.4 6.4 16 3Z" fill="currentColor"/><path d="M16 10v15M16 16.5l-4-3.2M16 20.5l4.2-3.4" fill="none" stroke="var(--logo-vein, #C8E86E)" stroke-width="2" stroke-linecap="round"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5"/><path d="M16 4.6a3.5 3.5 0 0 1 0 6.8M18 14.8c2 .6 3.2 2.3 3.5 5.2"/></symbol>
+  <symbol id="i-recycle" viewBox="0 0 24 24"><path d="M7 19H4.8a1.8 1.8 0 0 1-1.5-2.7L6 11.8"/><path d="M11 19h8.2a1.8 1.8 0 0 0 1.5-2.7l-1.4-2.4"/><path d="m14 16-3 3 3 3"/><path d="M8.3 13.5 7.2 9.4 3.1 10.5"/><path d="m9.3 5.6 1.2-2a1.8 1.8 0 0 1 3 0l3.8 6.5"/><path d="m13.4 9.1 4.1 1.1 1.1-4.1"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 15v3M11.5 10v8M16 13v5M20 6v12"/></symbol>
+  <symbol id="i-scale" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M8 11a4 4 0 0 1 8 0"/><path d="m12 11 1.6-2.4"/></symbol>
+  <symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="2.5" width="14" height="19" rx="2"/><path d="M8.5 6.5h7M8.5 11h.01M12 11h.01M15.5 11h.01M8.5 14.5h.01M12 14.5h.01M15.5 14.5v3.5M8.5 18h.01M12 18h.01"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M19 7V5.5A1.5 1.5 0 0 0 17.5 4H5a2 2 0 0 0 0 4h14a1 1 0 0 1 1 1v3.5M20 16.5V19a1 1 0 0 1-1 1H5a2 2 0 0 1-2-2V6"/><path d="M21.5 12H17a2.25 2.25 0 0 0 0 4.5h4.5z"/></symbol>
+  <symbol id="i-fund" viewBox="0 0 24 24"><path d="M12 21c-4.5-2.2-8-5.3-8-10V5.5L12 3l8 2.5V11c0 4.7-3.5 7.8-8 10Z"/><path d="M12 8v7M9.5 10.2c0-1 1.1-1.7 2.5-1.7s2.5.6 2.5 1.6c0 2.2-5 1-5 3.2 0 1 1.1 1.7 2.5 1.7s2.5-.7 2.5-1.7"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2.5 6.5h11v10h-11z"/><path d="M13.5 10h4l3.5 3.5v3h-7.5"/><circle cx="7" cy="18" r="1.8"/><circle cx="17.5" cy="18" r="1.8"/></symbol>
+  <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8z"/><path d="M14 2.5V8h5.5M8.5 13h7M8.5 17h5"/></symbol>
+  <symbol id="i-sort" viewBox="0 0 24 24"><path d="M4 7h16l-1.5 13a1.5 1.5 0 0 1-1.5 1.3H7A1.5 1.5 0 0 1 5.5 20z"/><path d="M9 4h6M12 11v6M9 13.5l3-2.5 3 2.5"/></symbol>
+  <symbol id="i-calendar" viewBox="0 0 24 24"><rect x="3" y="4.5" width="18" height="16.5" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v15H6a2 2 0 0 0-2 2 2 2 0 0 0 2 2h14"/></symbol>
+  <symbol id="i-building" viewBox="0 0 24 24"><path d="M4 21V5.5L12 3v18M12 8h8v13M2.5 21h19M7.5 9h1M7.5 13h1M7.5 17h1M15.5 12h1M15.5 16h1"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M10.3 3.9 2.4 17.6A2 2 0 0 0 4.1 20.6h15.8a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><path d="M12 9.5v4M12 17h.01"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 4.5 4.5 10.5-10.5"/></symbol>
+  <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 2.5 9.5 5-9.5 5-9.5-5z"/><path d="m2.5 12 9.5 5 9.5-5M2.5 16.5l9.5 5 9.5-5"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21.5s7-6.1 7-11.5a7 7 0 0 0-14 0c0 5.4 7 11.5 7 11.5Z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+</svg>
+
+<a class="skip-link" href="#konten">Lewati ke konten</a>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a class="brand" href="#beranda" aria-label="ResikPay, ke beranda">
+      <svg class="brand-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+      <span class="brand-word">Resik<span>Pay</span></span>
+    </a>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Navigasi utama">
+      <ul>
+        <li><a href="#beranda" data-nav>Beranda</a></li>
+        <li><a href="#cara-kerja" data-nav>Cara Kerja</a></li>
+        <li><a href="#dampak" data-nav>Dampak</a></li>
+        <li><a href="#program-rw" data-nav>Program RW</a></li>
+        <li><a href="#dashboard" data-nav>Dashboard</a></li>
+      </ul>
+      <a class="btn btn-primary nav-cta" href="#nilai">Jelajahi ResikPay</a>
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav">
+      <svg aria-hidden="true"><use href="#i-menu"/></svg>
+      <span class="sr-only">Buka menu</span>
+    </button>
+  </div>
+</header>
+
+<main id="konten">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="beranda" aria-labelledby="heroTitle">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Pengelolaan sampah berbasis insentif untuk tingkat RW</p>
+        <h1 id="heroTitle" class="hero-title">Sampah Bernilai. <span>Lingkungan Lebih Berarti.</span></h1>
+        <p class="hero-lede">ResikPay menghubungkan pengelolaan sampah rumah tangga dengan insentif ekonomi, pendanaan lingkungan tingkat RW, dan data yang membantu membangun komunitas yang lebih berkelanjutan.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#dashboard">Jelajahi Platform <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a class="btn btn-ghost btn-lg" href="#dampak">Lihat Dampak Kami</a>
+        </div>
+        <dl class="hero-facts" aria-label="Pembagian nilai per kilogram">
+          <div>
+            <dt>Harga jual material</dt>
+            <dd><span data-bind="ue.price"></span><small>/kg</small></dd>
+          </div>
+          <div>
+            <dt>Ke rumah tangga</dt>
+            <dd><span data-bind="ue.rewardPct"></span><small>reward</small></dd>
+          </div>
+          <div>
+            <dt>Ke kas RW</dt>
+            <dd><span data-bind="ue.rwPct"></span><small>dana lingkungan</small></dd>
+          </div>
+        </dl>
+        <p class="source-note"><span class="tag tag-source">Sumber: proposal</span> Angka di atas mengikuti model unit economics proposal ResikPay.</p>
+      </div>
+
+      <div class="hero-visual" aria-label="Pratinjau aplikasi ResikPay untuk rumah tangga, berisi data demo">
+        <div class="device">
+          <div class="device-top">
+            <div>
+              <p class="device-kicker">Akun rumah tangga</p>
+              <p class="device-title">RW 05 · Contoh</p>
+            </div>
+            <span class="tag tag-demo">Data Demo</span>
+          </div>
+
+          <div class="balance">
+            <p class="balance-label">Saldo reward bulan ini</p>
+            <p class="balance-value" id="heroBalance">–</p>
+            <p class="balance-sub"><span id="heroKg">–</span> disetor · <span id="heroRate"></span></p>
+          </div>
+
+          <div class="mini-chart" id="heroChart" role="img" aria-label="Grafik setoran enam minggu terakhir, data demo"></div>
+
+          <ul class="deposit-list" id="heroDeposits"></ul>
+        </div>
+
+        <div class="float-card float-alloc" aria-hidden="true">
+          <svg viewBox="0 0 64 64" class="alloc-ring" id="heroRing"></svg>
+          <div>
+            <p class="float-label">Per kg yang disetor</p>
+            <p class="float-value"><span data-bind="ue.rewardPerKg"></span> ke warga</p>
+          </div>
+        </div>
+
+        <div class="float-card float-fund" aria-hidden="true">
+          <p class="float-label">Dana lingkungan RW 05</p>
+          <p class="float-value" id="heroFund">–</p>
+          <div class="meter"><span id="heroFundBar"></span></div>
+          <p class="float-foot" id="heroFundFoot"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NILAI / PERAN ============ -->
+  <section class="section section-value" id="nilai" aria-labelledby="valueTitle">
+    <div class="wrap value-grid">
+      <header class="section-head">
+        <p class="kicker">Siapa yang terlibat</p>
+        <h2 id="valueTitle">Satu setoran sampah, empat pihak yang merasakan manfaatnya.</h2>
+        <p class="lede">Setiap kilogram yang ditimbang dicatat sekali, lalu dipakai untuk menghitung reward warga, dana RW, pasokan mitra, dan laporan lingkungan.</p>
+      </header>
+
+      <ol class="role-ledger">
+        <li class="role-row role-primary reveal">
+          <div class="role-icon"><svg aria-hidden="true"><use href="#i-home"/></svg></div>
+          <div class="role-body">
+            <h3>Rumah Tangga</h3>
+            <p>Memilah sampah di rumah, menyetorkannya saat jadwal pengumpulan, lalu menerima insentif sesuai berat dan aturan platform.</p>
+          </div>
+          <p class="role-gets"><span>Mendapat</span><strong><span data-bind="ue.rewardPct"></span> nilai material</strong></p>
+        </li>
+        <li class="role-row reveal">
+          <div class="role-icon"><svg aria-hidden="true"><use href="#i-users"/></svg></div>
+          <div class="role-body">
+            <h3>Pengurus RW</h3>
+            <p>Memantau partisipasi warga per RT dan melihat dana lingkungan yang terkumpul dari setiap setoran.</p>
+          </div>
+          <p class="role-gets"><span>Mendapat</span><strong><span data-bind="ue.rwPct"></span> untuk kas lingkungan</strong></p>
+        </li>
+        <li class="role-row reveal">
+          <div class="role-icon"><svg aria-hidden="true"><use href="#i-recycle"/></svg></div>
+          <div class="role-body">
+            <h3>Mitra Daur Ulang</h3>
+            <p>Menerima material yang sudah dipilah dan ditimbang, dengan jadwal pasokan yang lebih teratur.</p>
+          </div>
+          <p class="role-gets"><span>Mendapat</span><strong>Pasokan material terstruktur</strong></p>
+        </li>
+        <li class="role-row reveal">
+          <div class="role-icon"><svg aria-hidden="true"><use href="#i-chart"/></svg></div>
+          <div class="role-body">
+            <h3>Pemangku Kepentingan</h3>
+            <p>Mengakses rekap volume, partisipasi, dan alokasi dana untuk perencanaan pengelolaan sampah di wilayahnya.</p>
+          </div>
+          <p class="role-gets"><span>Mendapat</span><strong>Data dan laporan berkala</strong></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ CARA KERJA ============ -->
+  <section class="section section-dark" id="cara-kerja" aria-labelledby="flowTitle">
+    <div class="wrap">
+      <header class="section-head section-head-split">
+        <div>
+          <p class="kicker">Cara kerja</p>
+          <h2 id="flowTitle">Dari kantong pilah di rumah sampai ke mitra pembeli.</h2>
+        </div>
+        <p class="lede">Enam langkah ini berjalan berurutan. Pilih salah satu langkah untuk melihat siapa yang menjalankannya dan data apa yang dicatat.</p>
+      </header>
+
+      <div class="flow">
+        <div class="flow-track" role="tablist" aria-label="Langkah alur ResikPay" id="flowTabs"></div>
+        <div class="flow-panel" id="flowPanel" role="tabpanel" tabindex="0" aria-live="polite"></div>
+      </div>
+
+      <p class="flow-note"><svg aria-hidden="true"><use href="#i-alert"/></svg>Pencatatan berat dilakukan petugas saat pengumpulan. Reward dikreditkan ke saldo sesuai aturan platform; website ini tidak terhubung ke sistem pembayaran.</p>
+    </div>
+  </section>
+
+  <!-- ============ DAMPAK ============ -->
+  <section class="section" id="dampak" aria-labelledby="impactTitle">
+    <div class="wrap">
+      <header class="section-head section-head-split">
+        <div>
+          <p class="kicker">Dampak</p>
+          <h2 id="impactTitle">Potensi yang besar, diukur dengan jujur.</h2>
+        </div>
+        <p class="lede">Setiap angka di bagian ini diberi label: angka sumber dari proposal, simulasi dari rumus unit economics, atau hasil terukur. Kami tidak menampilkan capaian yang belum terjadi.</p>
+      </header>
+
+      <div class="impact-grid">
+        <article class="market-card reveal" aria-labelledby="marketTitle">
+          <div class="card-head">
+            <h3 id="marketTitle">Pasar yang bisa dilayani (SAM)</h3>
+            <span class="tag tag-source">Sumber: proposal</span>
+          </div>
+          <div class="market-stats">
+            <div class="stat">
+              <p class="stat-value"><span class="counter" data-counter="market.tons"></span><small>ton/tahun</small></p>
+              <p class="stat-label">Volume sampah bernilai jual</p>
+            </div>
+            <div class="stat">
+              <p class="stat-value"><span class="counter" data-counter="market.households"></span><small>rumah tangga</small></p>
+              <p class="stat-label">Rumah tangga dalam cakupan SAM</p>
+            </div>
+          </div>
+          <div class="validate-box" id="marketValidate"></div>
+        </article>
+
+        <article class="sim-card reveal" aria-labelledby="simTitle">
+          <div class="card-head">
+            <h3 id="simTitle"><svg aria-hidden="true"><use href="#i-calc"/></svg>Simulasi alokasi per bulan</h3>
+            <span class="tag tag-sim">Simulasi</span>
+          </div>
+          <p class="card-sub">Geser asumsi untuk melihat bagaimana tarif per kg dari proposal membagi nilai material. Hasilnya perhitungan, bukan capaian.</p>
+
+          <div class="sim-inputs">
+            <div class="field">
+              <label for="simHouseholds">Rumah tangga aktif</label>
+              <output for="simHouseholds" id="simHouseholdsOut"></output>
+              <input type="range" id="simHouseholds" min="10" max="1000" step="10" value="200">
+            </div>
+            <div class="field">
+              <label for="simKg">Setoran per rumah tangga per bulan</label>
+              <output for="simKg" id="simKgOut"></output>
+              <input type="range" id="simKg" min="1" max="20" step="0.5" value="5">
+            </div>
+          </div>
+
+          <div class="sim-total">
+            <p>Material terkumpul</p>
+            <p class="sim-total-value" id="simTotalKg"></p>
+          </div>
+
+          <ul class="alloc-bars" id="simBars"></ul>
+          <p class="fine" id="simFoot"></p>
+        </article>
+
+        <article class="measured-card reveal" aria-labelledby="measuredTitle">
+          <div class="card-head">
+            <h3 id="measuredTitle">Hasil terukur di lapangan</h3>
+            <span class="tag" id="measuredTag"></span>
+          </div>
+          <dl class="measured-list" id="measuredList"></dl>
+          <p class="fine" id="measuredFoot"></p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TRANSPARANSI KEUANGAN ============ -->
+  <section class="section section-tint" id="ekonomi" aria-labelledby="ueTitle">
+    <div class="wrap">
+      <header class="section-head section-head-split">
+        <div>
+          <p class="kicker">Transparansi per kilogram</p>
+          <h2 id="ueTitle">Ke mana <span data-bind="ue.price"></span> dari setiap kilogram mengalir.</h2>
+        </div>
+        <p class="lede">Alur di bawah mengikuti definisi proposal. Bagian yang belum dirinci di materi sumber ditandai, bukan diisi dengan kategori karangan.</p>
+      </header>
+
+      <div class="ue-layout">
+        <div class="ue-chart-wrap">
+          <div class="segmented" role="radiogroup" aria-label="Satuan perhitungan" id="ueUnits">
+            <button type="button" role="radio" aria-checked="true" data-mult="1">per kg</button>
+            <button type="button" role="radio" aria-checked="false" data-mult="100">per 100 kg</button>
+            <button type="button" role="radio" aria-checked="false" data-mult="1000">per ton</button>
+          </div>
+          <div class="sankey" id="sankey" role="img" aria-label="Diagram alur pembagian harga jual material per kilogram"></div>
+        </div>
+
+        <ol class="ue-ledger" id="ueLedger"></ol>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DASHBOARD ============ -->
+  <section class="section" id="dashboard" aria-labelledby="dashTitle">
+    <div class="wrap">
+      <header class="section-head section-head-split">
+        <div>
+          <p class="kicker">Pratinjau produk</p>
+          <h2 id="dashTitle">Satu data, tiga sudut pandang.</h2>
+        </div>
+        <p class="lede">Coba ganti peran, rentang waktu, dan jenis material. Semua isi dashboard adalah data demo yang dibuat di browser, dihitung dengan tarif per kg dari proposal.</p>
+      </header>
+
+      <div class="dash" id="dash">
+        <aside class="dash-side" aria-label="Pengaturan dashboard">
+          <div class="dash-brand">
+            <svg aria-hidden="true"><use href="#i-logo"/></svg>
+            <span>ResikPay</span>
+            <span class="tag tag-demo">Data Demo</span>
+          </div>
+
+          <p class="dash-side-label" id="roleLabel">Peran</p>
+          <div class="role-switch" role="tablist" aria-labelledby="roleLabel" id="roleSwitch">
+            <button type="button" role="tab" aria-selected="true" data-role="household" id="tab-household" aria-controls="dashMain">
+              <svg aria-hidden="true"><use href="#i-home"/></svg><span>Rumah Tangga</span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-role="rw" id="tab-rw" aria-controls="dashMain" tabindex="-1">
+              <svg aria-hidden="true"><use href="#i-users"/></svg><span>Pengurus RW</span>
+            </button>
+            <button type="button" role="tab" aria-selected="false" data-role="admin" id="tab-admin" aria-controls="dashMain" tabindex="-1">
+              <svg aria-hidden="true"><use href="#i-layers"/></svg><span>Admin Platform</span>
+            </button>
+          </div>
+
+          <fieldset class="material-filter">
+            <legend class="dash-side-label">Material</legend>
+            <div class="chips" id="materialFilter"></div>
+          </fieldset>
+
+          <p class="dash-side-foot">Tidak terhubung ke server, database, atau penyedia pembayaran.</p>
+        </aside>
+
+        <div class="dash-main" id="dashMain" role="tabpanel" aria-labelledby="tab-household">
+          <div class="dash-topbar">
+            <div>
+              <p class="dash-context" id="dashContext"></p>
+              <h3 class="dash-heading" id="dashHeading"></h3>
+            </div>
+            <div class="segmented" role="radiogroup" aria-label="Rentang waktu" id="rangeSwitch">
+              <button type="button" role="radio" aria-checked="true" data-range="7">7 hari</button>
+              <button type="button" role="radio" aria-checked="false" data-range="30">30 hari</button>
+              <button type="button" role="radio" aria-checked="false" data-range="84">12 minggu</button>
+            </div>
+          </div>
+
+          <div class="kpis" id="dashKpis"></div>
+
+          <div class="dash-body">
+            <div class="panel chart-panel">
+              <div class="panel-head">
+                <h4 id="chartTitle">Setoran</h4>
+                <div class="legend" id="chartLegend"></div>
+              </div>
+              <div class="bar-chart" id="dashChart"></div>
+            </div>
+
+            <div class="dash-cards">
+              <div class="panel money-card">
+                <div class="money-head"><svg aria-hidden="true"><use href="#i-wallet"/></svg><h4 id="rewardCardTitle">Saldo reward</h4></div>
+                <p class="money-value" id="rewardCardValue"></p>
+                <p class="money-sub" id="rewardCardSub"></p>
+              </div>
+              <div class="panel money-card money-card-fund">
+                <div class="money-head"><svg aria-hidden="true"><use href="#i-fund"/></svg><h4 id="fundCardTitle">Dana lingkungan RW</h4></div>
+                <p class="money-value" id="fundCardValue"></p>
+                <div class="meter"><span id="fundCardBar"></span></div>
+                <p class="money-sub" id="fundCardSub"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel activity-panel">
+            <div class="panel-head">
+              <h4 id="activityTitle">Aktivitas terbaru</h4>
+              <p class="panel-meta" id="activityMeta"></p>
+            </div>
+            <div class="table-scroll">
+              <table class="activity">
+                <thead id="activityHead"></thead>
+                <tbody id="activityBody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROGRAM RW ============ -->
+  <section class="section section-tint" id="program-rw" aria-labelledby="rwTitle">
+    <div class="wrap rw-grid">
+      <div class="rw-copy">
+        <p class="kicker">Program RW</p>
+        <h2 id="rwTitle">Lingkungan yang dikelola bersama, dari satu titik kumpul.</h2>
+        <p class="lede">ResikPay bekerja di tingkat RW karena di sanalah jadwal, kebiasaan, dan kas warga dikelola. Peta di samping menggambarkan alur satu putaran pengumpulan.</p>
+
+        <ul class="rw-points">
+          <li>
+            <svg aria-hidden="true"><use href="#i-users"/></svg>
+            <div><h3>Partisipasi rumah tangga</h3><p>Warga mendaftar per RT. Pengurus melihat siapa yang sudah aktif menyetor dan siapa yang perlu diajak.</p></div>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-calendar"/></svg>
+            <div><h3>Jadwal pengumpulan</h3><p>Satu hari tetap per minggu untuk penimbangan di titik kumpul, sehingga petugas dan warga tidak perlu menebak.</p></div>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-fund"/></svg>
+            <div><h3>Dana lingkungan komunitas</h3><p><span data-bind="ue.rwPct"></span> nilai material dari setiap setoran masuk ke kas lingkungan RW dan tercatat per transaksi.</p></div>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-book"/></svg>
+            <div><h3>Edukasi pemilahan</h3><p>Panduan pilah per jenis material agar setoran diterima mitra pembeli tanpa banyak penolakan.</p></div>
+          </li>
+          <li>
+            <svg aria-hidden="true"><use href="#i-file"/></svg>
+            <div><h3>Laporan kegiatan terbuka</h3><p>Rekap volume, reward, dan penggunaan dana RW bisa dilihat warga, bukan hanya pengurus.</p></div>
+          </li>
+        </ul>
+      </div>
+
+      <figure class="rw-visual">
+        <div class="rw-map" id="rwMap" role="img" aria-label="Ilustrasi alur pengumpulan: rumah warga di enam RT menyetor ke titik kumpul RW, lalu material diangkut ke mitra pembeli"></div>
+        <figcaption>
+          <div class="week" id="rwWeek" aria-label="Contoh jadwal pengumpulan mingguan"></div>
+          <p class="fine">Ilustrasi alur. Jumlah RT dan hari pengumpulan hanya contoh.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ============ MODEL BISNIS ============ -->
+  <section class="section" id="model-bisnis" aria-labelledby="bizTitle">
+    <div class="wrap">
+      <header class="section-head section-head-split">
+        <div>
+          <p class="kicker">Model bisnis</p>
+          <h2 id="bizTitle">Pendapatan tumbuh. Laba belum.</h2>
+        </div>
+        <p class="lede">Grafik ini menampilkan proyeksi pendapatan, bukan laba. Proposal memproyeksikan EBITDA negatif selama tiga tahun pertama, dan kami menampilkannya apa adanya.</p>
+      </header>
+
+      <div class="biz-layout">
+        <div class="panel revenue-panel">
+          <div class="panel-head">
+            <h3>Proyeksi pendapatan 3 tahun</h3>
+            <span class="tag tag-proj">Proyeksi</span>
+          </div>
+          <div class="revenue-chart" id="revenueChart"></div>
+          <div class="ebitda-row" id="ebitdaRow"></div>
+        </div>
+
+        <div class="streams">
+          <h3 class="streams-title">Sumber pendapatan</h3>
+          <ul id="streamList"></ul>
+          <div class="growth" id="growthBox"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RISIKO ============ -->
+  <section class="section section-dark" id="risiko" aria-labelledby="riskTitle">
+    <div class="wrap">
+      <header class="section-head section-head-split">
+        <div>
+          <p class="kicker">Risiko dan asumsi</p>
+          <h2 id="riskTitle">Lima asumsi yang menentukan apakah model ini bekerja.</h2>
+        </div>
+        <p class="lede">Skenario di bawah adalah hasil pemodelan, bukan hasil keuangan aktual. Angka pendanaan ditampilkan persis seperti di proposal.</p>
+      </header>
+
+      <div class="risk-layout">
+        <ol class="assumptions" id="assumptionList"></ol>
+        <div class="scenarios">
+          <h3 class="scenarios-title">Kebutuhan pendanaan menurut skenario</h3>
+          <div class="scenario-grid" id="scenarioGrid"></div>
+        </div>
+      </div>
+
+      <details class="audit" id="auditBox">
+        <summary><svg aria-hidden="true"><use href="#i-alert"/></svg>Catatan validasi data <span class="audit-count" id="auditCount"></span></summary>
+        <ul id="auditList"></ul>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ CTA ============ -->
+  <section class="closing" id="mulai" aria-labelledby="closingTitle">
+    <div class="wrap closing-inner">
+      <h2 id="closingTitle">Mulai dari lingkungan sekitar, bangun dampak yang berkelanjutan.</h2>
+      <a class="btn btn-lime btn-lg" href="#cara-kerja">Kenali Cara Kerja ResikPay <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="#beranda" aria-label="ResikPay, ke beranda">
+        <svg class="brand-mark" aria-hidden="true"><use href="#i-logo"/></svg>
+        <span class="brand-word">Resik<span>Pay</span></span>
+      </a>
+      <p>Platform pengelolaan sampah rumah tangga yang membagi nilai material kepada warga, kas lingkungan RW, dan mitra daur ulang.</p>
+    </div>
+    <nav aria-label="Tautan footer" class="footer-nav">
+      <ul>
+        <li><a href="#cara-kerja">Cara Kerja</a></li>
+        <li><a href="#dampak">Dampak</a></li>
+        <li><a href="#ekonomi">Transparansi per kg</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#program-rw">Program RW</a></li>
+        <li><a href="#model-bisnis">Model Bisnis</a></li>
+        <li><a href="#risiko">Risiko</a></li>
+      </ul>
+    </nav>
+    <div class="footer-contact" id="footerContact"></div>
+  </div>
+  <div class="wrap footer-base">
+    <p>© <span data-bind="meta.year"></span> ResikPay. Angka keuangan bersumber dari proposal; isi dashboard adalah data demo.</p>
+    <svg class="footer-motif" viewBox="-4 0 228 40" aria-hidden="true" focusable="false">
+      <path d="M0 30 C30 30 40 10 70 10 S110 30 140 30 180 10 220 10" fill="none" stroke="currentColor" stroke-width="1.2"/>
+      <circle cx="70" cy="10" r="3" fill="currentColor"/><circle cx="140" cy="30" r="3" fill="currentColor"/><circle cx="220" cy="10" r="3" fill="currentColor"/>
+    </svg>
+  </div>
+</footer>
+
+<div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+
+<noscript><p class="noscript">Aktifkan JavaScript untuk melihat angka, grafik, dan dashboard ResikPay.</p></noscript>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
