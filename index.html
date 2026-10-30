@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500;600&display=swap">
-  <link rel="stylesheet" href="css/style.css?v=2.3">
+  <link rel="stylesheet" href="css/style.css?v=2.4">
 </head>
 <body>
 
@@ -367,7 +367,57 @@
           <div class="sankey" id="sankey" role="img" aria-label="Diagram alur pembagian harga jual material per kilogram"></div>
         </div>
 
-        <ol class="ue-ledger" id="ueLedger"></ol>
+        <ol class="ue-ledger" id="ueLedger">
+          <li tabindex="0" data-key="price" aria-label="Harga jual material: Rp 2.300 /kg">
+            <span class="sw" style="background:#0E1C15"></span>
+            <span class="nm">Harga jual material</span>
+            <span class="vl">Rp 2.300<small>/kg · 100%</small></span>
+            <span class="ds">Harga rata-rata yang dibayar mitra pembeli untuk setiap kilogram material terpilah.</span>
+            <span class="tag tag-source">Tabel 4</span>
+          </li>
+          <li tabindex="0" data-key="reward" aria-label="Reward rumah tangga: Rp 805 /kg">
+            <span class="sw" style="background:#1C8457"></span>
+            <span class="nm">Reward rumah tangga</span>
+            <span class="vl">Rp 805<small>/kg · 35%</small></span>
+            <span class="ds">35% dari harga jual (Rp 805/kg), dikreditkan ke saldo warga penyetor.</span>
+            <span class="tag tag-source">Tabel 4</span>
+          </li>
+          <li tabindex="0" data-key="rw" aria-label="Dana lingkungan RW: Rp 184 /kg">
+            <span class="sw" style="background:#C8E86E"></span>
+            <span class="nm">Dana lingkungan RW</span>
+            <span class="vl">Rp 184<small>/kg · 8%</small></span>
+            <span class="ds">8% dari harga jual (Rp 184/kg), masuk ke kas lingkungan RW.</span>
+            <span class="tag tag-source">Tabel 4</span>
+          </li>
+          <li tabindex="0" data-key="rest" aria-label="Sisa untuk operasional: Rp 1.311 /kg">
+            <span class="sw" style="background:#4E7A63"></span>
+            <span class="nm">Sisa untuk operasional</span>
+            <span class="vl">Rp 1.311<small>/kg · 57%</small></span>
+            <span class="ds">Hasil pengurangan harga jual dengan reward warga dan dana kas RW.</span>
+            <span class="tag tag-sim">Dihitung</span>
+          </li>
+          <li tabindex="0" data-key="logistics" aria-label="Biaya angkutan: Rp 158 /kg">
+            <span class="sw" style="background:#C79A33"></span>
+            <span class="nm">Biaya angkutan</span>
+            <span class="vl">Rp 158<small>/kg · 7%</small></span>
+            <span class="ds">Rp150/kg terkumpul (setara Rp158/kg diterima setelah memperhitungkan 5% penolakan).</span>
+            <span class="tag tag-source">Tabel 4</span>
+          </li>
+          <li tabindex="0" data-key="platformTax" aria-label="Platform & alokasi pajak: Rp 275 /kg">
+            <span class="sw" style="background:#3B8EA5"></span>
+            <span class="nm">Platform & alokasi pajak</span>
+            <span class="vl">Rp 275<small>/kg · 12%</small></span>
+            <span class="ds">Biaya variabel server/cloud dan alokasi pajak omzet UMKM 0,5%.</span>
+            <span class="tag tag-source">Tabel 4</span>
+          </li>
+          <li tabindex="0" data-key="contrib" aria-label="Kontribusi setelah biaya variabel: Rp 878 /kg">
+            <span class="sw" style="background:#123D2B"></span>
+            <span class="nm">Kontribusi setelah biaya variabel</span>
+            <span class="vl">Rp 878<small>/kg · 38%</small></span>
+            <span class="ds">Kontribusi marjinal Rp878 per kg untuk menutup biaya tetap operasional tim dan RW.</span>
+            <span class="tag tag-source">Tabel 4</span>
+          </li>
+        </ol>
       </div>
     </div>
   </section>
@@ -653,7 +703,7 @@
 
 <noscript><p class="noscript">Aktifkan JavaScript untuk melihat angka, grafik, dan dashboard ResikPay.</p></noscript>
 
-<script src="js/data.js?v=2.3"></script>
-<script src="js/app.js?v=2.3"></script>
+<script src="js/data.js?v=2.4"></script>
+<script src="js/app.js?v=2.4"></script>
 </body>
 </html>
